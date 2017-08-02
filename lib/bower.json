@@ -21,6 +21,7 @@
     "angular-route": "^1.6.4",
     "angular-animate": "^1.6.4",
     "angular-sanitize": "^1.6.4",
-    "angularjs-datepicker": "^2.1.21"
+    "angularjs-datepicker": "^2.1.21",
+    "angularfire": "^2.3.0"
   }
 }

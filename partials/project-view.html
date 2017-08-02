@@ -1,0 +1,17 @@
+<h2>Project View Page</h2>
+<button class="btn" ng-click="addNewPage()">Add New Project</button>
+
+<div class"row">
+  <div class="container">
+    <div class="col-xs-10" ng-repeat="proj in projects">
+      {{proj.taskName}}<br />
+      <a href="{{proj.jiraTicket}}">JIRA TICKET</a><br />
+      {{proj.cellid}}<br />
+      {{proj.contentid}}<br />
+      {{proj.assets}}<br />
+      {{proj.creativeServer}}<br />
+      {{proj.imageServer}}<br />
+      {{proj.notes}}
+    </div>
+  </div>
+</div>

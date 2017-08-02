@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adhoc Reference Application</title>
+  <link rel="stylesheet" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body ng-app="AdhocApp">
+
+  <div class="container-fluid" ng-view>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <!-- AngularFire -->
+  <!-- <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./lib/bower_components/angular/angular.min.js"></script>
+  <script src="./lib/bower_components/angular-route/angular-route.min.js"></script>
+
+  <script src="./javascripts/app.js"></script>
+  <script src="./javascripts/app-config.js"></script>
+  <script src="./javascripts/app-constant.js"></script>
+
+  <script src="./javascripts/factories/auth-factory.js"></script>
+  <script src="./javascripts/factories/user-factory.js"></script>
+  <script src="./javascripts/factories/project-factory.js"></script>
+
+  <script src="./javascripts/controllers/auth-ctrl.js"></script>
+  <script src="./javascripts/controllers/project-ctrl.js"></script>
+</body>
+</html>
