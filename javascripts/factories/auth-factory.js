@@ -23,11 +23,15 @@ app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
   //Firebase: Use input credentials to authenticate user.
   let authenticate = (credentials) => {
     return $q((resolve, reject) => {
-      firebase.auth().signInWithEmailAndPassword(credentials.email, credentials.password)
-      .then((resultz) => {
-        resolve(resultz);
-      }).catch((error) => {
-        reject(error);
+      firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+        .then(function() {
+          console.log("heyyoooo..");
+          firebase.auth().signInWithEmailAndPassword(credentials.email, credentials.password)
+            .then((results) => {
+              resolve(results)
+          }).catch((error) => {
+          reject(error);
+        });
       });
     });
   };
@@ -47,24 +51,5 @@ app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
   };
 
 
-  var persistence = () => {
-      console.log("what in the actual fuck");
-      firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
-        .then(function() {
-          // Existing and future Auth states are now persisted in the current
-          // session only. Closing the window would clear any existing state even
-          // if a user forgets to sign out.
-          // ...
-          // New sign-in will be persisted with session persistence.
-          return firebase.auth().signInWithEmailAndPassword(email, password);
-        })
-        .catch(function(error) {
-          // Handle Errors here.
-          var errorCode = error.code;
-          var errorMessage = error.message;
-        });
-  };
-
-
-  return { persistence:persistence, isAuthenticated: isAuthenticated, getUser: getUser, logout: logout, registerWithEmail: registerWithEmail, authenticate: authenticate};
+  return { isAuthenticated: isAuthenticated, getUser: getUser, logout: logout, registerWithEmail: registerWithEmail, authenticate: authenticate};
 });

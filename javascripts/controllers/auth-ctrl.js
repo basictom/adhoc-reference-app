@@ -5,10 +5,7 @@
 
 app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, UserFactory){
 
-  $scope.auth = {
-    email: "tfitzgerald@zetaglobal.com",
-    password: "123456"
-  };
+  $scope.auth = {};
 
   let logMeIn = () => {
     AuthFactory.authenticate($scope.auth).then((userCreds) => {
@@ -16,12 +13,12 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
     }, (error) => {
       $scope.alerts.push({msg: error.message});
     }).then((user) => {
-      if(user){
-        console.log("what the fuck");
-        AuthFactory.persistence();
-      }else{
-        console.log("error with persistence");
-      };
+      // if(user){
+      //   console.log("what the fuck");
+      //   AuthFactory.persistence();
+      // }else{
+      //   console.log("error with persistence");
+      // };
       $rootScope.user = user;
       $location.url(`/projects/${user.type}/${user.uid}`);
     }).catch((error) => {
