@@ -65,14 +65,14 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     ProjectFactory.editProject(id).then((results) => {
       console.log(results.assets);
       $location.url("/edit-project");
-      $scope.taskName = results.taskName;
-      $scope.cellid = results.cellid;
-      $scope.content = results.contentid;
-      $scope.assets = results.assets;
-      $scope.creative = results.creativeServer;
-      $scope.imageServer =results.imageServer;
-      $scope.jira = results.jiraTicket;
-      $scope.notes =results.notes;
+      // $scope.taskName = results.taskName;
+      // $scope.cellid = results.cellid;
+      // $scope.content = results.contentid;
+      // $scope.assets = results.assets;
+      // $scope.creative = results.creativeServer;
+      // $scope.imageServer =results.imageServer;
+      // $scope.jira = results.jiraTicket;
+      // $scope.notes =results.notes;
       // getProjects();
     }).catch((error) => {
       console.log("edit proj", error);
