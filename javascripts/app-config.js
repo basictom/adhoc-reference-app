@@ -37,5 +37,8 @@ app.config(function($routeProvider){
   }).when('/new-project', {
     templateUrl: '/partials/project-new.html',
     controller: 'ProjectCtrl'
+  }).when('/edit-project', {
+    templateUrl: '/partials/project-edit.html',
+    controller: 'ProjectCtrl'
   }).otherwise('/auth');
 });

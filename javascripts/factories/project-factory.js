@@ -1,13 +1,13 @@
 app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  let addProject = (task, cellid, content, assets, creative, imageServer, jira, notes, userId) => {
+  let addProject = (task, cellid, content, assets, creative, imageServer, jira, notes, userId, newDate) => {
     return $q((resolve, reject) => {
       $http.post(`${FIREBASE_CONFIG.databaseURL}/projects.json`, JSON.stringify({
-        // POST data here
         "assets" : assets,
         "cellid" : cellid,
         "contentid" : content,
         "creativeServer" : creative,
+        "createdOn" : newDate,
         "imageServer" : imageServer,
         "jiraTicket" : jira,
         "notes" : notes,
@@ -25,6 +25,7 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
   let getProjects = (userId) => {
       let projects = [];
+      console.log(userId);
       return $q((resolve, reject) => {
         $http.get(`${FIREBASE_CONFIG.databaseURL}/projects.json?orderBy="uid"&equalTo="${userId}"`)
         .then((proj) => {
@@ -52,6 +53,21 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
       });
     };
 
+    let editProject = (id) => {
+      console.log(id);
+      return $q((resolve, reject) => {
+        $http.get(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`)
+        .then((results) => {
+          // results.data.id = id;
+          // console.log(results.data);
+          results = results.data;
+          resolve(results);
+        }).catch((error) => {
+          reject(error);
+        });
+      });
+    };
 
-    return { getProjects:getProjects, addProject:addProject, deleteProject:deleteProject };
+
+    return { editProject:editProject, getProjects:getProjects, addProject:addProject, deleteProject:deleteProject };
 });
