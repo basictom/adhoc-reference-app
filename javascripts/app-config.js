@@ -1,3 +1,13 @@
+let isAuth = (AuthFactory) => new Promise ((resolve, reject) => {
+  if(AuthFactory.isAuthenticated()){
+    // console.log("User is authenticated, resolve route promise");
+    resolve();
+  } else {
+    // console.log("User is not authenticated, reject route promise");
+    reject();
+  }
+});
+
 app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthFactory) {
   firebase.initializeApp(FIREBASE_CONFIG);
 
@@ -31,7 +41,7 @@ app.config(function($routeProvider){
   $routeProvider.when('/auth', {
     templateUrl: '/partials/auth.html',
     controller: 'AuthCtrl'
-  }).when('/projects/:type/:uid', {
+  }).when('/projects', {
     templateUrl: '/partials/project-view.html',
     controller: 'ProjectCtrl'
   }).when('/new-project', {

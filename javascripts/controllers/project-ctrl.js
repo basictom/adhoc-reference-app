@@ -1,17 +1,7 @@
 app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory){
 
-  console.log($rootScope.user.uid);
-
   $scope.projects = [];
   $scope.info = false;
-  var task = $scope.taskName;
-  var cellid = $scope.cellid;
-  var content = $scope.content;
-  var assets = $scope.assets;
-  var creative = $scope.creative;
-  var imageServer = $scope.imageServer;
-  var jira = $scope.jira;
-  var notes = $scope.notes;
 
   $scope.showInfo = (id) => {
     console.log("prj id", id);
@@ -40,8 +30,8 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
   var newDate = getTimeStamp();
 
   $scope.addProject = () => {
-    ProjectFactory.addProject(task, cellid, content, assets, creative, imageServer, jira, notes, $rootScope.user.uid, newDate).then((returns) => {
-    $location.url("/projects/:type/:uid");
+    ProjectFactory.addProject($scope.taskName, $scope.cellid, $scope.content, $scope.assets, $scope.creative, $scope.imageServer, $scope.jira, $scope.notes, $rootScope.user.uid, newDate).then((returns) => {
+    $location.url("/projects");
     }).catch((error) => {
       console.log("add proj error", error);
     });

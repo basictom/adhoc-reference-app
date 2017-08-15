@@ -24,8 +24,8 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
 
   let getProjects = (userId) => {
+    console.log(userId);
       let projects = [];
-      console.log(userId);
       return $q((resolve, reject) => {
         $http.get(`${FIREBASE_CONFIG.databaseURL}/projects.json?orderBy="uid"&equalTo="${userId}"`)
         .then((proj) => {
