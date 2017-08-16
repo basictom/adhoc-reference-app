@@ -14,7 +14,6 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
   }
 
   $scope.deleteProject = (id) => {
-    console.log("clicking delete", id);
     ProjectFactory.deleteProject(id).then((results) => {
       getProjects();
     }).catch((error) => {
@@ -24,7 +23,6 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
 
   var getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
-      console.log("proj results", results);
       $scope.projects = results;
     }).catch((error) => {
       console.log("get proj error", error);

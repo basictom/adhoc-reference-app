@@ -49,5 +49,8 @@ app.config(function($routeProvider){
   }).when('/edit-project/:id', {
     templateUrl: '/partials/project-edit.html',
     controller: 'ProjectEditCtrl'
+  }).when('/checklist/:id', {
+    templateUrl: '/partials/project-checklist',
+    controller: 'ProjectChecklist'
   }).otherwise('/auth');
 });

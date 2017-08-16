@@ -7,7 +7,6 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 
   let logMeIn = () => {
     AuthFactory.authenticate($scope.auth).then((userCreds) => {
-      console.log('auth', $scope.auth);
       return UserFactory.getUser(userCreds.uid);
     }, (error) => {
       $scope.alerts.push({msg: error.message});

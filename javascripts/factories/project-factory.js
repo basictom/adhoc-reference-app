@@ -1,6 +1,18 @@
 app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  let addProject = (p, newDate) => {
+  var getTimeStamp = () => {
+      var now = new Date();
+      return ((now.getMonth() + 1) + '/' +
+              (now.getDate()) + '/' +
+               now.getFullYear() + " " +
+               now.getHours() + ':' +
+               ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' +
+               ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
+  }
+
+  var newDate = getTimeStamp();
+
+  let addProject = (p) => {
     return $q((resolve, reject) => {
       $http.post(`${FIREBASE_CONFIG.databaseURL}/projects.json`, JSON.stringify({
         "assets" : p.assets,
@@ -64,12 +76,12 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
     };
 
     let editProject = (p, id) => {
-      console.log(p.creativeServer);
       return $q((resolve, reject) => {
         $http.put(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`, JSON.stringify({
           "assets" : p.assets,
           "cellid" : p.cellid,
           "contentid" : p.contentid,
+          "createdOn" : newDate,
           "creativeServer" : p.creativeServer,
           "imageServer" : p.imageServer,
           "jiraTicket" : p.jira,
