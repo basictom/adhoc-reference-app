@@ -1,23 +1,19 @@
 {
   "users" : {
     "user1": {
-      "uid":"20qfyqXBM5S7yuJ5mKBciVADecv2",
-      "useremail":"tfitzgerald@zetaglobal.com",
-      "type" : "developer"
+      "uid":"20qfyqXBM5S7yuJ5mKBciVADecv2"
     },
     "user2": {
-      "uid":"PAhbZaOi5xhe78gKDYQPLOH4INr1",
-      "useremail":"tpfitz42@gmail.com",
-      "type" : "developer"
+      "uid":"PAhbZaOi5xhe78gKDYQPLOH4INr1"
     },
     "user3": {
-      "uid":"3",
-      "useremail":"resola@zetaglobal.com",
-      "type" : "manager"
+      "uid":"KAkmBrteQrSwcRHDC2AeZ8xn9Mn2"
     }
   },
   "projects" : {
     "project1" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
         "taskName" : "Task 1",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -28,6 +24,8 @@
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },
     "project2" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
         "taskName" : "Task 2",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -38,6 +36,8 @@
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },
     "project3" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
         "taskName" : "Task 3",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -48,6 +48,8 @@
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },
     "project4" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
         "taskName" : "Task 4",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -57,6 +59,8 @@
         "imageServer" : "PLACEHOLDER",
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },"project5" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
         "taskName" : "Task 5",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -67,6 +71,8 @@
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },
     "project6" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2",
         "taskName" : "Task 6",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
@@ -77,6 +83,8 @@
         "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
     },
     "project7" : {
+        "createdOn" : "PLACEHOLDER",
+        "assets" : "PLACEHOLDER",
         "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2",
         "taskName" : "Task 7",
         "jiraTicket" : "http://img.ed4.net/placeholder.htm",
