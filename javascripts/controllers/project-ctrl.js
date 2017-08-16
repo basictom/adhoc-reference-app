@@ -1,41 +1,15 @@
 app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory){
 
+ console.log('user id', $rootScope.user.uid);
+
   $scope.projects = [];
   $scope.info = false;
 
-  $scope.showInfo = (id) => {
-    console.log("prj id", id);
-    console.log("scoped id", $scope.projects);
-    $scope.info = true;
-  };
+  $scope.newProject = {};
 
   $scope.addNewPage = () => {
     $location.url("/new-project");
   }
-
-  var getTimeStamp = () => {
-      var now = new Date();
-      return ((now.getMonth() + 1) + '/' +
-              (now.getDate()) + '/' +
-               now.getFullYear() + " " +
-               now.getHours() + ':' +
-               ((now.getMinutes() < 10)
-                   ? ("0" + now.getMinutes())
-                   : (now.getMinutes())) + ':' +
-               ((now.getSeconds() < 10)
-                   ? ("0" + now.getSeconds())
-                   : (now.getSeconds())));
-  }
-
-  var newDate = getTimeStamp();
-
-  $scope.addProject = () => {
-    ProjectFactory.addProject($scope.taskName, $scope.cellid, $scope.content, $scope.assets, $scope.creative, $scope.imageServer, $scope.jira, $scope.notes, $rootScope.user.uid, newDate).then((returns) => {
-    $location.url("/projects");
-    }).catch((error) => {
-      console.log("add proj error", error);
-    });
-  };
 
   $scope.deleteProject = (id) => {
     console.log("clicking delete", id);
@@ -46,24 +20,13 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     });
   };
 
-  $scope.cancelProject = () => {
-    $location.url("/projects/:type/:uid");
-  }
+
 
   $scope.editProject = (id) => {
     console.log(id);
     ProjectFactory.editProject(id).then((results) => {
       console.log(results.assets);
       $location.url("/edit-project");
-      // $scope.taskName = results.taskName;
-      // $scope.cellid = results.cellid;
-      // $scope.content = results.contentid;
-      // $scope.assets = results.assets;
-      // $scope.creative = results.creativeServer;
-      // $scope.imageServer =results.imageServer;
-      // $scope.jira = results.jiraTicket;
-      // $scope.notes =results.notes;
-      // getProjects();
     }).catch((error) => {
       console.log("edit proj", error);
     })
@@ -71,6 +34,7 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
 
   var getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
+      console.log("proj results", results);
       $scope.projects = results;
     }).catch((error) => {
       console.log("get proj error", error);

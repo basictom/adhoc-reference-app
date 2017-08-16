@@ -8,6 +8,7 @@ let isAuth = (AuthFactory) => new Promise ((resolve, reject) => {
   }
 });
 
+
 app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthFactory) {
   firebase.initializeApp(FIREBASE_CONFIG);
 
@@ -46,9 +47,9 @@ app.config(function($routeProvider){
     controller: 'ProjectCtrl'
   }).when('/new-project', {
     templateUrl: '/partials/project-new.html',
-    controller: 'ProjectCtrl'
+    controller: 'ProjectNewCtrl'
   }).when('/edit-project', {
     templateUrl: '/partials/project-edit.html',
-    controller: 'ProjectCtrl'
+    controller: 'ProjectEditCtrl'
   }).otherwise('/auth');
 });
