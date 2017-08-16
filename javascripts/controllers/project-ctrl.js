@@ -1,7 +1,5 @@
 app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory){
 
- console.log('user id', $rootScope.user.uid);
-
   $scope.projects = [];
   $scope.info = false;
 
@@ -11,6 +9,10 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     $location.url("/new-project");
   }
 
+  $scope.editPage = () => {
+    $location.url("/edit-project");
+  }
+
   $scope.deleteProject = (id) => {
     console.log("clicking delete", id);
     ProjectFactory.deleteProject(id).then((results) => {
@@ -18,18 +20,6 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     }).catch((error) => {
       console.log("delete project error", error);
     });
-  };
-
-
-
-  $scope.editProject = (id) => {
-    console.log(id);
-    ProjectFactory.editProject(id).then((results) => {
-      console.log(results.assets);
-      $location.url("/edit-project");
-    }).catch((error) => {
-      console.log("edit proj", error);
-    })
   };
 
   var getProjects = () => {

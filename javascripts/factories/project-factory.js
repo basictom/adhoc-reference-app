@@ -52,14 +52,10 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
       });
     };
 
-    let editProject = (id) => {
-      console.log(id);
+    let editSingleProject = (id) => {
       return $q((resolve, reject) => {
         $http.get(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`)
         .then((results) => {
-          // results.data.id = id;
-          // console.log(results.data);
-          results = results.data;
           resolve(results);
         }).catch((error) => {
           reject(error);
@@ -67,6 +63,28 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
       });
     };
 
+    let editProject = (p, id) => {
+      console.log(p.creativeServer);
+      return $q((resolve, reject) => {
+        $http.put(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`, JSON.stringify({
+          "assets" : p.assets,
+          "cellid" : p.cellid,
+          "contentid" : p.contentid,
+          "creativeServer" : p.creativeServer,
+          "imageServer" : p.imageServer,
+          "jiraTicket" : p.jira,
+          "notes" : p.notes,
+          "taskName" : p.taskName,
+          "uid" : $rootScope.user.uid
+        }))
+        .then((results) => {
+          resolve(results);
+        }).catch((error) => {
+          console.log("factory edit error", error);
+        });
+      });
+    };
 
-    return { editProject:editProject, getProjects:getProjects, addProject:addProject, deleteProject:deleteProject };
+
+    return { editProject:editProject, editSingleProject:editSingleProject, getProjects:getProjects, addProject:addProject, deleteProject:deleteProject };
 });
