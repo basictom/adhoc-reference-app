@@ -1,7 +1,7 @@
 app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  var getTimeStamp = () => {
-      var now = new Date();
+  let getTimeStamp = () => {
+      const now = new Date();
       return ((now.getMonth() + 1) + '/' +
               (now.getDate()) + '/' +
                now.getFullYear() + " " +
@@ -10,7 +10,7 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
                ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
   }
 
-  var newDate = getTimeStamp();
+  let newDate = getTimeStamp();
 
   let addProject = (p) => {
     return $q((resolve, reject) => {
@@ -84,7 +84,7 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
           "createdOn" : newDate,
           "creativeServer" : p.creativeServer,
           "imageServer" : p.imageServer,
-          "jiraTicket" : p.jira,
+          "jiraTicket" : p.jiraTicket,
           "notes" : p.notes,
           "taskName" : p.taskName,
           "uid" : $rootScope.user.uid
