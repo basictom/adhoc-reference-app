@@ -6,49 +6,41 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
     });
   });
 
-  $scope.assetsObject = [
-    {
-    question: "Blah Blah Blah",
-    cb1: true,
-    cb2: false,
-    cb3: false,
-    cb4: false,
-    cb5: false
-  },
-  {
-    question: "YA YA YA YA",
-    cb1: false,
-    cb2: true,
-    cb3: false,
-    cb4: false,
-    cb5: false
-  },
-  {
-    question: "OH OHO OHO",
-    cb1: false,
-    cb2: false,
-    cb3: false,
-    cb4: false,
-    cb5: false
+  $scope.questionsArray = [
+        "Blah Blah Blah",
+        "XXX CXXX XCXC",
+        "QUESTION 3"
+  ];
+
+  $scope.checkboxArray = [];
+  let key = $scope.checkboxArray;
+  let obj = [];
+  $scope.count = 0;
+  $scope.addNewCheckbox = () => {
+    console.log("scoped value", $scope.$index);
+    let newKey = $scope.count++;
+    let pushKey = "cb" + newKey;
+    obj[pushKey] = false;
+    key.push(obj);
+    console.log(key);
+  };
+
+  $scope.onChange = (value) => {
+    console.log("change value", value);
   }
-];
-$scope.checkedItems = () => {
-    var checkItems = [];
-    angular.forEach($scope.assetsObject, function(objs, arrayIndex){
-        angular.forEach(objs, function(cb, key) {
-          console.log(cb);
-          console.log(key);
-            if(key.substring(0, 2) == "cb" && cb) {
-                checkItems.push(objs.question + '-' + key)
-            }
-        })
-    })
-    return checkItems
-}
 
 
-
-
+  $scope.checkedItems = () => {
+      var checkItems = [];
+      angular.forEach($scope.assetsObject, function(objs, arrayIndex){
+          angular.forEach(objs, function(cb, key) {
+              if(key.substring(0, 2) == "cb" && cb) {
+                  checkItems.push(objs.question + '-' + key)
+              }
+          })
+      })
+      return checkItems
+  }
 
 
 
