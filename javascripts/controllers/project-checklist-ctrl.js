@@ -7,9 +7,13 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
   });
 
   $scope.questionsArray = [
-        "Blah Blah Blah",
-        "XXX CXXX XCXC",
-        "QUESTION 3"
+        "PSD - Copied to the Server",
+        "HTML",
+        "Text",
+        "Images",
+        "Cell Id",
+        "ASF / Marketing Plan / PID File",
+        "Grid"
   ];
 
   $scope.checkboxArray = [];
@@ -17,16 +21,22 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
   let obj = [];
   $scope.count = 0;
   $scope.addNewCheckbox = () => {
-    console.log("scoped value", $scope.$index);
+    $scope.versionBtn = true;
     let newKey = $scope.count++;
+    if(newKey === 11){
+      $scope.versionBtn = false;
+    }
     let pushKey = "cb" + newKey;
     obj[pushKey] = false;
     key.push(obj);
     console.log(key);
   };
 
+
+
   $scope.onChange = (value) => {
-    console.log("change value", value);
+    console.log($scope.box);
+    // console.log("change value", value);
   }
 
 

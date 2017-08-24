@@ -23,6 +23,7 @@
     "angular-sanitize": "^1.6.4",
     "angularjs-datepicker": "^2.1.21",
     "angularfire": "^2.3.0",
-    "iCheck": "icheck#^1.0.2"
+    "iCheck": "icheck#^1.0.2",
+    "angular-loading-bar": "^0.9.0"
   }
 }

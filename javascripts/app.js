@@ -1,1 +1,1 @@
-var app = angular.module("AdhocApp", ["ngRoute"]);
+var app = angular.module("AdhocApp", ["ngRoute", 'angular-loading-bar']);
