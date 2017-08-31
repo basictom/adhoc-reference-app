@@ -21,6 +21,10 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     });
   };
 
+  let confirmation = () => {
+
+  }
+
   var getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
       $scope.projects = results;

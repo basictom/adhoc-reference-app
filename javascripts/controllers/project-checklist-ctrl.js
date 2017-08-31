@@ -23,21 +23,19 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
   $scope.addNewCheckbox = () => {
     $scope.versionBtn = true;
     let newKey = $scope.count++;
-    if(newKey === 11){
-      $scope.versionBtn = false;
-    }
+    // if(newKey === 11){
+    //   $scope.versionBtn = false;
+    // }
     let pushKey = "cb" + newKey;
     obj[pushKey] = false;
     key.push(obj);
-    console.log(key);
+    console.log(obj);
   };
 
-
-
-  $scope.onChange = (value) => {
-    console.log($scope.box);
-    // console.log("change value", value);
-  }
+  $scope.onCbChange = (cb, id) => {
+    console.log("changinggg, index.", cb);
+    console.log("changinggg, id.", id);
+  };
 
 
   $scope.checkedItems = () => {

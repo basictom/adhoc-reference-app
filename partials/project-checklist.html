@@ -11,7 +11,7 @@
 
   <div class="col-xs-1"><button class="btn btn-info" ng-click="assets = !assets"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
   <div class="col-xs-7"><h3>Assets Received</h3></div>
-  <div class="col-xs-4 text-right"><button class="btn btn-primary" ng-click="addNewCheckbox()" ng-show="versionBtn = true">add version</button></div>
+  <div class="col-xs-4 text-right"><button class="btn btn-primary" ng-click="addNewCheckbox()" ng-show="versionBtn != false">add version</button></div>
 
   <div class="col-xs-12 check-outline" ng-repeat="objs in questionsArray" ng-show="assets">
     <div class="col-xs-4">
@@ -19,7 +19,7 @@
     </div>
     <div class="col-xs-8">
       <div class="col-xs-1" ng-repeat="box in checkboxArray track by $index">
-        <input type="checkbox" ng-model="box.$index" ng-change="onChange($index)">
+        <input type="checkbox" ng-model="$index" ng-change="onCbChange($index, box.id)">
       </div>
     </div>
   </div>

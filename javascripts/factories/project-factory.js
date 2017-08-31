@@ -55,13 +55,15 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
     };
 
     let deleteProject = (id) => {
-      return $q((resolve, reject) => {
-        $http.delete(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`).then((results) => {
-          resolve(results);
-        }).catch((error) => {
-          reject(error);
+      if(confirm("Are you sure you want to delete this AWESOME project?")){
+        return $q((resolve, reject) => {
+          $http.delete(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`).then((results) => {
+            resolve(results);
+          }).catch((error) => {
+            reject(error);
+          });
         });
-      });
+      }else{}
     };
 
     let editSingleProject = (id) => {
@@ -81,8 +83,8 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
           "assets" : p.assets,
           "cellid" : p.cellid,
           "contentid" : p.contentid,
-          "createdOn" : newDate,
           "creativeServer" : p.creativeServer,
+          "createdOn" : newDate,
           "imageServer" : p.imageServer,
           "jiraTicket" : p.jiraTicket,
           "notes" : p.notes,
