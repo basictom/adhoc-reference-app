@@ -23,10 +23,8 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
   $scope.addNewCheckbox = () => {
     $scope.versionBtn = true;
     let newKey = $scope.count++;
-    // if(newKey === 11){
-    //   $scope.versionBtn = false;
-    // }
     let pushKey = "cb" + newKey;
+    console.log(pushKey);
     obj[pushKey] = false;
     key.push(obj);
     console.log(obj);

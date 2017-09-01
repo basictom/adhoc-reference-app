@@ -10,6 +10,39 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
                ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
   }
 
+
+  // Soe's solution
+//   var getTimeStamp = () => {
+//   const now = new Date();
+//   return ((now.getMonth() + 1) + '/' +
+//     (now.getDate()) + '/' +
+//     now.getFullYear() + " " +
+//     now.getHours() + ':' +
+//     ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' +
+//     ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
+// }
+//
+//
+// // When the user triggers the function the variable newDate get's stored into an object and passed in the DB
+//
+// var count = 0;
+// var timeStamp = [];
+// document.getElementById("demo").addEventListener("click", myFunction);
+//
+//
+//
+// function myFunction() {
+//
+//   timeStamp[count] = getTimeStamp();
+//
+//   var arrayLength = timeStamp.length;
+//   var click = count + 1;
+//   for (var i = 0; i < arrayLength; i++) {
+//     document.getElementById("tracker").innerHTML = "Time: " + timeStamp[i] + " | Number of Click: " + click + "<BR>";
+//   }
+//   count++;
+
+
   let newDate = getTimeStamp();
 
   let addProject = (p) => {
@@ -84,7 +117,8 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
           "cellid" : p.cellid,
           "contentid" : p.contentid,
           "creativeServer" : p.creativeServer,
-          "createdOn" : newDate,
+          "createdOn" : p.createdOn,
+          "updatedOn" : newDate,
           "imageServer" : p.imageServer,
           "jiraTicket" : p.jiraTicket,
           "notes" : p.notes,
