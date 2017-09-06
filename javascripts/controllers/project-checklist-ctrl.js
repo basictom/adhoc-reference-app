@@ -1,39 +1,72 @@
 app.controller("ProjectChecklist", function($scope, $rootScope, $location, ProjectFactory){
 
-  $(document).ready(function(){
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-purple'
-    });
-  });
 
-  $scope.questionsArray = [
-        "PSD - Copied to the Server",
-        "HTML",
-        "Text",
-        "Images",
-        "Cell Id",
-        "ASF / Marketing Plan / PID File",
-        "Grid"
+  // $scope.questionsArray = [
+  //       "PSD - Copied to the Server",
+  //       "HTML",
+  //       "Text",
+  //       "Images",
+  //       "Cell Id",
+  //       "ASF / Marketing Plan / PID File",
+  //       "Grid"
+  // ];
+
+
+  var ctrl = this;
+
+  this.fields = [
+    "PSD - Copied to the Server",
+    "HTML",
+    "Text",
+    "Images",
+    "Cell Id",
+    "ASF / Marketing Plan / PID File",
+    "Grid",
   ];
 
-  $scope.checkboxArray = [];
-  let key = $scope.checkboxArray;
-  let obj = [];
-  $scope.count = 0;
-  $scope.addNewCheckbox = () => {
-    $scope.versionBtn = true;
-    let newKey = $scope.count++;
-    let pushKey = "cb" + newKey;
-    console.log(pushKey);
-    obj[pushKey] = false;
-    key.push(obj);
-    console.log(obj);
+  this.versions = [{}];
+
+	// This function really just fills in the blanks
+  this.formatForApi = function() {
+		return this.versions
+      .map(function(version) {
+        return ctrl.fields.reduce(function(out, field) {
+        	out[field] = !!version[field];
+        	return out;
+        }, {});
+      });
   };
 
-  $scope.onCbChange = (cb, id) => {
-    console.log("changinggg, index.", cb);
-    console.log("changinggg, id.", id);
+  let userOutput = ctrl.formatForApi();
+
+  $scope.submitChecklist = () => {
+    console.log(userOutput);
   };
+
+
+
+
+  // $scope.checkboxArray = [];
+  // let key = $scope.checkboxArray;
+  // let obj = [];
+  // $scope.count = 0;
+  // $scope.addNewCheckbox = () => {
+  //   $scope.versionBtn = true;
+  //   let newKey = $scope.count++;
+  //   let pushKey = "cb" + newKey;
+  //   console.log(pushKey);
+  //   obj[pushKey] = false;
+  //   key.push(obj);
+  //   console.log(obj);
+  // };
+  //
+  // $scope.onCbChange = (cb, id) => {
+  //   console.log("changinggg, index.", cb);
+  //   console.log("changinggg, id.", id);
+  // };
+
+
+
 
 
   $scope.checkedItems = () => {

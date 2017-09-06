@@ -20,6 +20,10 @@ app.controller("ProjectEditCtrl", function($scope, $routeParams, $rootScope, $lo
     }).catch((error) => {
       console.log("edit error", error);
     })
-  }
+  };
+
+  $scope.cancelProject = () => {
+    $location.url("/projects");
+  };
 
 });

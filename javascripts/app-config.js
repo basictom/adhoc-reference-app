@@ -51,6 +51,6 @@ app.config(function($routeProvider){
     controller: 'ProjectEditCtrl'
   }).when('/checklist/:id', {
     templateUrl: '/partials/project-checklist',
-    controller: 'ProjectChecklist'
+    controller: 'ProjectChecklist as ctrl'
   }).otherwise('/auth');
 });
