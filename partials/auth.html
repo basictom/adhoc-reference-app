@@ -1,18 +1,63 @@
-<div class="container-fluid col-xs-4 authenticate">
-  <div class="row">
-    <div class="col-xs-12">
-      <input type="email" class="form-spacing" placeholder="Email Address" ng-model="auth.email" required autofocus>
+<div uib-alert ng-repeat="alert in alerts" class="alert-danger">
+    {{alert.msg}}
+</div>
+<div class="auth-container">
+  <div class="container-fluid col-xs-12 authenticate" ng-hide="authenticate">
+    <div class="row">
+      <h2>Login</h2>
     </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="email" class="form-control" placeholder="Email Address" ng-model="auth.email" required autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="password" class="form-control" placeholder="Password" ng-model="auth.password" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 buttons">
+        <button class="col-xs-12 btn btn-warning" ng-click="loginUser()" >Login</button>
+      </div>
+    </div>
+    <div class="col-xs-12 center registerText"><a ng-click="authenticate = !authenticate">Dont have an account? Register here</a></div>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <input type="password" class="form-spacing" placeholder="Password" ng-model="auth.password" required>
+
+  <div class="container-fluid col-xs-12 registerUser" ng-show="authenticate">
+    <div class="row">
+      <h2>Register</h2>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 buttons">
-      <a class="btn col-xs-6" ng-click="loginUser()" >Login</a>
-      <a class="btn col-xs-6" ng-click="registerUser()" >Register</a>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="email" class="form-control" placeholder="First Name" ng-model="auth.firstName" required autofocus>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="email" class="form-control" placeholder="Last Name" ng-model="auth.lastName" required autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="email" class="form-control" placeholder="Username" ng-model="auth.username" required autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="email" class="form-control" placeholder="Email Address" ng-model="auth.email" required autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 input-group">
+        <input type="password" class="form-control" placeholder="Password" ng-model="auth.password" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 buttons">
+        <button class="col-xs-12 btn btn-warning" ng-click="registerUser()" >Register</button>
+      </div>
+    </div>
+    <div class="col-xs-12 center registerText"><a ng-click="authenticate = !authenticate">Already have an account? Login here</a></div>
   </div>
 </div>

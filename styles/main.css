@@ -82,7 +82,7 @@ h3 {
   height: 150px;
 }
 .assets-received {
-  background-color: lightblue;
+  background-color: #ffffff;
 }
 .general-setup {
   background-color:lightgreen;
@@ -114,6 +114,64 @@ h3 {
   position: absolute;
   top:100px;
 }
+
+/* AUTH STYLES */
+
+.auth-container input {
+  margin: 5px 0px;
+}
+.input-group {
+  padding:5px 15px !important;
+}
+
+.auth-container {
+  position: relative;
+  left: 36%;
+}
+.authenticate {
+  text-align:center;
+  background-color:#ffffff;
+  border-radius:5px;
+  padding: 20px;
+  width: 300px;
+  margin: 0;
+}
+
+.authenticate.ng-hide-add {
+  -web-kit-animation: fadeOutLeftBig 0.4s;
+  display: block;
+}
+.authenticate.ng-hide-remove {
+  -web-kit-animation: fadeInLeftBig 0.4s;
+}
+
+.registerUser.ng-hide-add {
+  -web-kit-animation: fadeOutLeftBig 0.4s;
+  display: block;
+}
+.registerUser.ng-hide-remove {
+  -web-kit-animation: fadeInLeftBig 0.4s;
+}
+
+.registerUser {
+  text-align:center;
+  background-color:#ffffff;
+  border-radius:5px;
+  padding: 20px;
+  width: 300px;
+  margin: 0;
+}
+
+.registerText {
+  font-size: 10px;
+  text-decoration:none;
+  color: #e9e9e9;
+}
+.registerText:hover {
+  color: #444;
+}
+
+/* =========== */
 
 /* iCheck plugin Flat skin, blue
 ----------------------------------- */
