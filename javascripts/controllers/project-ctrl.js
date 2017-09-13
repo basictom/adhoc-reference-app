@@ -3,6 +3,8 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
   $scope.projects = [];
   $scope.info = false;
 
+  $scope.name = $rootScope.user.firstName;
+
   $scope.newProject = {};
 
   $scope.addNewPage = () => {

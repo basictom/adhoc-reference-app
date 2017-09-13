@@ -1,4 +1,4 @@
-app.controller("ProjectChecklist", function($scope, $rootScope, $location, ProjectFactory){
+app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $location, ProjectFactory, CheckListFactory){
 
   var ctrl = this;
 
@@ -26,6 +26,11 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $location, Proje
 
   $scope.submitChecklist = () => {
     console.log(this.userResponse());
+    CheckListFactory.postChecklist(this.userResponse(), $routeParams.id).then((response) => {
+      // console.log()
+    }).catch((error) => {
+      console.log("checklist error", error);
+    })
   };
 
 });

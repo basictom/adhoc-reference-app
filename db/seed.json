@@ -1,98 +1,136 @@
 {
-  "users" : {
-    "user1": {
-      "uid":"20qfyqXBM5S7yuJ5mKBciVADecv2"
+  "projects" : {
+    "-KrkhegdRxOkBBJTG72W" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\TDC_CVSH_T3\\DEVS",
+      "cellid" : "Mailing ID: 394338899; V1: 759729; V2: 759730;",
+      "contentid" : "V1 Template: 486188779__ Footer: 486134439__; V2 Template: 486188839__;",
+      "createdOn" : "8/17/2017 16:35:38",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_30_TDC_CVSH",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_08_30_TDC_CVSH",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-26271",
+      "notes" : "- Footer looks to be using the 'new style' but missing the Caremark logo\n- Left Images, No ALT text\n\n- ***NEW FOOTER*** 486367739 ***NEW V1*** 486367809 ***NEW V2: 486368359***",
+      "taskName" : "Caremark_17_08_30_TDC_CVSH_T3",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
     },
-    "user2": {
-      "uid":"PAhbZaOi5xhe78gKDYQPLOH4INr1"
+    "-KrpiMgXtu2YyT-0VqF6" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\TDC_CBC_T3\\DEVS",
+      "cellid" : "Mailing ID: 394348559",
+      "contentid" : "TEMPLATE: 486134409__; NEW TEMPLATE: 486370919;;",
+      "createdOn" : "8/22/2017 10:25:04",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_30_TDC_CBC",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_08_30_TDC_CBC",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-26322",
+      "notes" : "FROM PRODUCTION: I have a 1 version PSD build for Caremark. FYI, this mailing has an emoji in the Subject Line",
+      "taskName" : "Caremark_17_08_30_TDC_CBC_T3",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
     },
-    "user3": {
-      "uid":"KAkmBrteQrSwcRHDC2AeZ8xn9Mn2"
+    "-KsFoXCPBRz9gK0-N0Xx" : {
+      "cellid" : "CLONED FOOTER: 502379341__",
+      "createdOn" : "8/23/2017 15:34:18",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CTESVUS-18934",
+      "notes" : "The Events Team over at BCBS is looking to update their template in our system with a new footer that is already in production in other BCBS mailings. The cell information is below and I cloned the footer content object and applied it to the cell. Their team would like the footer to match the width of the template. As it stands right now, there is white space on either side of the footer.",
+      "taskName" : "BCBS Footer Update",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    },
+    "-KsOmhwKRd0i9gojqhAu" : {
+      "assets" : "\\\\Fs1\\Clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170824_SmartShopperBuilds",
+      "cellid" : "mailingId=1093500481",
+      "createdOn" : "8/31/2017 11:46:51",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\PSD_to_Responsive_build_2_versions",
+      "imageServer" : "N/A",
+      "notes" : "------------------- NOTE FROM PRODUCTION --------------------------------\n*Please remove the Social Media Icons in the footer.\n*Adam wasn't too sure what should be linked, but be please use your best judgment of what should be linked (CTAs, URLs in the content, etc....).\n*Please use our placeholder link for ALL links (privacy policy, unsub, etc...).\n*Once completed, we should be sending over the HTML files and the image slices for that company to host the images.\n*Use best judgement for Alt Text.\n--------------------------------------------------------------------------------------------------------------\n\n- I hosted the images on fs1 for testing purposes. The final HTML images all have \"./images/..\" file path, which is pointing to an images folder inside of the root folder. (possibly a poor description, please let me know if this is confusing.)\n- Email Registration has a different disclaimer above the footer for mobile and desktop.\n- The Disclaimer's both have an apostrophe right after the trade mark symbol in the PSD, I assume this is a typo and have deleted it.",
+      "taskName" : "BCBS > PSD to Responsive HTML - 2 versions",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    },
+    "-Ksj4YJlJ2V8hrfi7SeQ" : {
+      "assets" : "\\\\fs1\\creative_services\\Citizens\\2017\\MMA_Rate_Hoppers\\FA_R9",
+      "cellid" : "cell id: 3402780",
+      "contentid" : "Given Content Object: 502406381 --- NEW OBJ's ::  platinum_v1: 502444261, platinum_v2: 502444271, premier_v1: 502444281, premier_v2: 502444291",
+      "createdOn" : "8/31/2017 15:11:17",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\MMA_Rate_Hoppers",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\MMA_Rate_Hoppers",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27134",
+      "notes" : "- Premier version / \"*Based on balances in the account as of x/xx/xx\" looks like it is going to be mapped by audience of versioncode? Please specify.\n- The bulleted '12-month rate' looks like it is going to utilize a multival to loop through the given data per customer. The PSD gives six 'examples' however, I only used one in the build. If this is not the case and there are going to be six static bullet points please let me know. \n- ASF mentions to 'use deploy date' I used a placeholder symbol called _DEPLOYDATE__\n- Rates and region name are going to need to pull in through the joins from the rates table. If this is to be done on my end please advise.\n- Can you please provide the text for the disclaimer for platinum_plus_2. Currently Only one PSD for both versions, text cannot be copied from image/pdf.\n- Given the lack of specification I'm assuming that all four versions are going to be mailed out of the same cell and will be split by audience, which there are currently only two.",
+      "taskName" : "CITZBK0003 - MMA Rate Hoppers",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 10:54:38"
+    },
+    "-KstRrpCPXKu51c_YNu1" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\09_September\\MNN_POST_IMPLEMENT\\DEVS",
+      "cellid" : "Mailing ID: 396821919",
+      "contentid" : "OLD template ID: 486280409__ NEW TEMPLATE ID ::: 486414319",
+      "createdOn" : "8/31/2017 15:14:35",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_09_18_MNN",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_09_18_MNN",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27826",
+      "notes" : "I have a one-version Caremark PSD build. Please note, there is a merge field in the body copy for Effective Date. You can use the\n_DATE__\nsymbol for this field.",
+      "taskName" : "Caremark_17_09_18_MNN_Post_Implementation",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 10:22:57"
+    },
+    "-Ksxxtth3LfWOYYknNLl" : {
+      "assets" : "\\\\Fs1\\Clients\\CVS\\CVS_SPECIALTY\\Campaigns\\2017\\Q3\\Specialty_17_09_14_FULL\\DevRequest",
+      "cellid" : "Cell Id: 53631 || Cell Id: 53630 || Cell Id: 53632 || Cell Id: 53626 ---- Mailing Id: 397191589",
+      "contentid" : "Old Template Id: (A)486342589__; (B)486342599__; (C) 486342609__; (D) 486342619__; || 42983A : 486436499 || 42983B : 486436709 || 42983C : 486437089 || 42983D : 486437099",
+      "createdOn" : "9/1/2017 9:29:36",
+      "creativeServer" : "\\\\fs1\\creative_services\\CVSspecialty\\2017\\SPECIALTY_17_09_14_MHT_FULL",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\cvsspecialty\\2017\\SPECIALTY_17_09_14_MHT_FULL",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-28057",
+      "notes" : "Not sure if it helps, but for the links, you can replace part of the link (Webtrends) with the \"WEBTRENDS\" symbol. Example below:\nFrom - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*ME_EMAIL_SPECIALTY_17_09_UR_CORE_FULL_75-42983B*_Logo\nTo - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*_WEBTRENDS__*_Logo",
+      "taskName" : "CVS 170914 SPECIALTY_17_09_14_MHT_FULL",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 11:11:08"
+    },
+    "-KtSOv5JUPLRJ9tXw0xB" : {
+      "createdOn" : "9/7/2017 12:33:30",
+      "taskName" : "Testy McTesterson's New Test Project",
+      "uid" : "JZWve1ITpUTU4ic82AFke5zrYHO2",
+      "updatedOn" : "9/7/2017 12:33:56"
+    },
+    "-Ktmglk2KzJO8reC1n5V" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\09_September\\DTD\\FULL\\DevRequest",
+      "cellid" : "Mailing Id: 396992259 || Cell IDs: 765181, 765182, 765183, 765184, 765185, 765186",
+      "contentid" : "NEW 36876A: 486464169 || NEW 36876B: 486464179 || NEW 36876C: 486464189 || NEW 37109A: 486464199 || NEW 37109B: \t486464209  ||  NEW 37109C: 486464219  || 36876A: 486315349__ || 36876B: 486315499__ || 36876C: 486317219__ || 37109A: || 37109B: 486317489__ || 37109C: 486317659__",
+      "createdOn" : "9/11/2017 9:52:02",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_09_19_DTD_September",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_09_19_DTD",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27886",
+      "notes" : "Subject lines contain Emojis\n\n- ASF does not contain links for 'Download Our App (footer button)' and  'Enroll in Text Rx Alerts' Placeholder used instead. 'FOOTER - Download Our App' and 'FOOTER - Enroll in Text Rx Alerts' used for report names.\n- ALT text for Hero image is as noted in the ASF",
+      "taskName" : "Caremark_17_09_19_DTD_September_FULL_SLTests",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/12/2017 17:12:45"
+    },
+    "-KtvYrpUcX-ESfMyt6lk" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\EMERGENCY_HURRICANE\\DEVS2",
+      "cellid" : "765654",
+      "contentid" : "OLD: 486411139__ NEW: 486466439",
+      "createdOn" : "9/13/2017 9:04:07",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_Emergency_TX_Hurricane\\VERSION_TWO",
+      "imageServer" : "N/A",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27667",
+      "notes" : "--------------------------------------------------\nCaremark is looking to have another version of the Hurricane message be created and provided a new PSD (resembles the previous build).\n--------------------------------------------------\n\n- As discussed, leaving out '[Add information on mobile or pop-up pharmacies as appropriate]' as there is not relevant data yet. Please let me know if/when this changes.\n- CITY and STORMNAME left as TBD\n- No mention to link 'CVSHealth.com' within body copy. Please let me know if this is in correct.\n- 'Download Our App' and 'Enroll in Text Rx Alerts' links are the same from previous build. No mention to change them in the ASF.",
+      "taskName" : "Caremark_17_08_Emergency_TX_Hurricane",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/13/2017 11:35:27",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      }
     }
   },
-  "projects" : {
-    "project1" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
-        "taskName" : "Task 1",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
+  "users" : {
+    "user1" : {
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "firstName" : "Thomas",
+      "email" : "tfitzgerald@zetaglobal.com",
+      "password" : "123456"
     },
-    "project2" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
-        "taskName" : "Task 2",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
-    },
-    "project3" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
-        "taskName" : "Task 3",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
-    },
-    "project4" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
-        "taskName" : "Task 4",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
-    },"project5" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "PAhbZaOi5xhe78gKDYQPLOH4INr1",
-        "taskName" : "Task 5",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
-    },
-    "project6" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2",
-        "taskName" : "Task 6",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
-    },
-    "project7" : {
-        "createdOn" : "PLACEHOLDER",
-        "assets" : "PLACEHOLDER",
-        "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2",
-        "taskName" : "Task 7",
-        "jiraTicket" : "http://img.ed4.net/placeholder.htm",
-        "cellid" : "1234567",
-        "contentid" : "523462",
-        "creativeServer" : "PLACEHOLDER",
-        "imageServer" : "PLACEHOLDER",
-        "notes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum euismod semper. Nunc efficitur scelerisque tortor, id laoreet sapien ullamcorper id. Praesent consectetur lorem nunc. Nullam mattis erat quis nulla cursus ultrices. Morbi laoreet eleifend eros, ut gravida arcu convallis sit amet. Duis ultrices sollicitudin tristique."
+    "user3" : {
+      "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2",
+      "firstName" : "Rachel",
+      "email" : "resola@zetaglobal.com",
+      "password" : "123456"
     }
   }
 }

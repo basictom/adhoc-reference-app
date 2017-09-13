@@ -6,7 +6,8 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
         .then((userObject) => {
           let users = [];
           Object.keys(userObject.data).forEach((key) => {
-            users.push(userObject.data[key]); //looping through object of objects and pushing first into user array. A way to loop over objects.
+            users.push(userObject.data[key]);
+            //looping through object of objects and pushing first into user array. A way to loop over objects.
           });
           resolve(users[0]);
         })
@@ -21,7 +22,9 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
       $http.post(`${FIREBASE_CONFIG.databaseURL}/users.json`,
         JSON.stringify({
           uid: authData.uid,
-          username: authData.username
+          firstName: authData.firstName,
+          email: authData.email,
+          password: authData.password
         })
       )
       .then((storeUserSuccess) => {
