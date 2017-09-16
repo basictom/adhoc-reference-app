@@ -1,5 +1,9 @@
 app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory){
 
+
+  console.log($rootScope.users);
+
+
   $scope.projects = [];
   $scope.info = false;
 

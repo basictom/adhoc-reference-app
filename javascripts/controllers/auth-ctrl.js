@@ -16,14 +16,14 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 
   let logMeIn = () => {
     AuthFactory.authenticate($scope.auth).then((userCreds) => {
-      return UserFactory.getUser(userCreds.uid);
+      return UserFactory.getUser(userCreds.uid).then((user) => {
+        $rootScope.user = user;
+        $location.url("/projects");
+      });
     }, (error) => {
-      $location.url("/auth");
       $scope.alerts.push({msg: error.message});
       console.log("authenticate error", error);
-    }).then((user) => {
-      $rootScope.user = user;
-      $location.url("/projects");
+      $location.url("/auth");
     }).catch((error) => {
       console.log("getUser error", error);
     });
