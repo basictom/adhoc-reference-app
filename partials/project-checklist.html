@@ -1,0 +1,48 @@
+<div class="col-xs-12">
+  <div class="col-xs-6">
+    <h2>Checklist View Page</h2>
+  </div>
+  <div class="col-xs-6 text-right">
+    <button class="btn btn-primary" ng-click="">View All Checklist's</button>
+  </div>
+</div>
+
+<div class="col-xs-12 assets-received checklist-cont">
+
+  <div class="col-xs-1"></div>
+  <div class="col-xs-7"></div>
+  <div class="col-xs-4 text-right"><button class="btn btn-primary" ng-click="ctrl.versions.push({})">add version</button></div>
+
+  <div class="col-xs-12 check-outline">
+    <div class="col-xs-4">
+      <h4><strong>Version Number</strong></h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="col-xs-1" ng-repeat="x in ctrl.versions">
+        <h4><strong>v{{::$index + 1}}</strong></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 check-outline" ng-repeat="question in ::ctrl.fields">
+    <div class="col-xs-4">
+      {{::question}}
+    </div>
+    <div class="col-xs-8">
+      <div class="col-xs-1" ng-repeat="version in ctrl.versions">
+        <input type="checkbox" class="checkbox-custom" ng-model="version[question]">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12">
+  {{ctrl.userResponse()}}
+</div>
+
+<div class="col-xs-6">
+</div>
+
+<div class="col-xs-6 text-right">
+  <button class="btn btn-primary" ng-click="submitChecklist()">Submit Checklist</button>
+</div>
