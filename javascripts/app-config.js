@@ -45,8 +45,13 @@ app.config(function($routeProvider){
     resolve: {isAuth}
   })
   .when("/checklist/:id", {
-    templateUrl: "partials/project-checklist",
+    templateUrl: "partials/project-checklist.html",
     controller: "ProjectChecklist as ctrl",
+    resolve: {isAuth}
+  })
+  .when("/manager" , {
+    templateUrl: "partials/manager-view.html",
+    controller: "ManagerCtrl",
     resolve: {isAuth}
   })
   .otherwise("/auth");

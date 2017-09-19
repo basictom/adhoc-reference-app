@@ -158,12 +158,6 @@
     }
   },
   "users" : {
-    "-Ku12XfDqK0DNDBSKnQg" : {
-      "uid" : "jVYfxPEPIJMg9GWI0etNgTHZXQw2",
-      "firstName" : "Larry",
-      "email" : "larry@l.com",
-      "password" : "123456"
-    },
     "user1" : {
       "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
       "firstName" : "Thomas",

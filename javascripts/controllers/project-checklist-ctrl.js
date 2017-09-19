@@ -1,6 +1,6 @@
 app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $location, ProjectFactory, CheckListFactory){
-
-  var ctrl = this;
+  let projectId = $routeParams.id;
+  let ctrl = this;
 
   this.fields = [
     "PSD - Copied to the Server",
@@ -24,10 +24,23 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $l
       });
   };
 
+
+
+  let findCheckedData = (id) => {
+    console.log(id);
+    CheckListFactory.getCheckedData(id).then((response) => {
+      console.log(response);
+      ctrl.versions = response.data;
+    }).catch((error) => {
+      console.log("checklist error", error);
+    })
+  };
+
+  findCheckedData(projectId);
+
   $scope.submitChecklist = () => {
-    console.log(this.userResponse());
-    CheckListFactory.postChecklist(this.userResponse(), $routeParams.id).then((response) => {
-      // console.log()
+    CheckListFactory.postChecklist(this.userResponse(), projectId).then((response) => {
+      console.log(response);
     }).catch((error) => {
       console.log("checklist error", error);
     })

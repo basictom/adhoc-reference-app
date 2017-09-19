@@ -34,6 +34,9 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
         "assets" : p.assets,
         "cellid" : p.cellid,
         "contentid" : p.content,
+        "checklist" : {
+          "active" : true
+        },
         "creativeServer" : p.creative,
         "createdOn" : newDate,
         "imageServer" : p.imageServer,

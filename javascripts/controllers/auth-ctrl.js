@@ -18,7 +18,15 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
     AuthFactory.authenticate($scope.auth).then((userCreds) => {
       return UserFactory.getUser(userCreds.uid).then((user) => {
         $rootScope.user = user;
-        $location.url("/projects");
+        console.log(user);
+        if(user.email == "resola@zetaglobal.com"){
+          console.log("rachel's logged in");
+          $location.url("/manager");
+        }else{
+          console.log("other user's logged in");
+          $location.url("/projects");
+        }
+
       });
     }, (error) => {
       $scope.alerts.push({msg: error.message});

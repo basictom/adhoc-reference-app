@@ -1,9 +1,8 @@
 app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
   let postChecklist = (listItems, id) => {
-    console.log(listItems[0].HTML);
     return $q((resolve, reject) => {
-
+      console.log(id);
       for(i=0;i<listItems.length;i++){
         let asf = listItems[i]["ASF / Marketing Plan / PID File"];
         let grid = listItems[i].Grid;
@@ -22,8 +21,7 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
           "CELLID" : cellId
         }))
         .then((result) => {
-          console.log(result);
-          // resolve(result);
+          resolve(result);
         }).catch((error) => {
           reject(error);
         });
@@ -31,5 +29,16 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
     });
   }
 
-  return { postChecklist:postChecklist }
+  let getCheckedData = (id) => {
+    console.log("inside factory", id);
+    return $q((resolve, reject) => {
+      $http.get(`${FIREBASE_CONFIG.databaseURL}/projects/${id}/checklist.json`).then((result) => {
+        resolve(result);
+      }).catch((error) => {
+        reject(error);
+      });
+    });
+  }
+
+  return { postChecklist:postChecklist, getCheckedData:getCheckedData }
 });

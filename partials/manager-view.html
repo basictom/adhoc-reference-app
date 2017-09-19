@@ -1,0 +1,52 @@
+<div>
+    <div class="col-xs-12">
+      <div class="col-xs-6">
+        <h2>All Current Users</h2>
+      </div>
+    </div>
+
+
+
+      <div class="col-xs-12 panel" ng-repeat="user in users">
+
+        <div class="col-xs-3"><h3>{{user.firstName}}</h3></div>
+        <div class="col-xs-5"><h3>{{user.email}}</h3></div>
+        <div class="col-xs-2 text-left"><button ng-click="getUserProjects('{{user.uid}}')" class="btn btn-warning">{{user.firstName}}'s Projects</button></a></div>
+        <div class="col-xs-2 text-align"><a ng-href="/#!/edit-project/{{proj.id}}">Potentially another button but who knows...</button></a></div>
+
+        <!-- <div class="col-xs-1"><button class="btn btn-info" ng-click="proj.show = !proj.show"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+        <div class="col-xs-7"><h3>{{proj.taskName}}</h3></div>
+        <div class="col-xs-2 text-right"><a ng-href="/#!/checklist/{{proj.id}}"><button class="btn btn-warning">QA checklist</button></a></div>
+        <div class="col-xs-1 text-align"><a ng-href="/#!/edit-project/{{proj.id}}"><button class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i></button></a></div>
+        <div class="col-xs-1 text-align"><button class="btn btn-danger" ng-click="deleteProject(proj.id)"><i class="fa fa-trash" aria-hidden="true"></i></button></div> -->
+
+
+
+        <!-- <div class="task-info" ng-show="proj.show">
+          <row>
+            <div class="col-xs-12 indvidual-task"><a target="_blank" href="{{proj.jiraTicket}}">JIRA TICKET</a></div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Cell ID:</strong> {{proj.cellid}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Content ID's:</strong> {{proj.contentid}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Assets:</strong> {{proj.assets}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Creative Server Path:</strong> {{proj.creativeServer}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Image Server Path:</strong> {{proj.imageServer}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 indvidual-task"><strong>Notes:</strong> {{proj.notes}}</div>
+          </row>
+          <row>
+            <div class="col-xs-12 text-right margin-bottom"><span class="created">Created on: {{proj.createdOn}} || Updated on: {{proj.updatedOn}}</span></div>
+          </row>
+        </div> -->
+      </div>
+</div>
