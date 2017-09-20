@@ -26,4 +26,5 @@ app.controller("ProjectEditCtrl", function($scope, $routeParams, $rootScope, $lo
     $location.url("/projects");
   };
 
+
 });

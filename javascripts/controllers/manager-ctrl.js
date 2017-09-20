@@ -1,19 +1,15 @@
-app.controller("ManagerCtrl", function(ManagerFactory, $scope ){
+app.controller("ManagerCtrl", function(ManagerFactory, $scope, $location, $rootScope, $routeParams ){
 
-  // let getChecklists = (id) => {
-  //   console.log(id);
-  //   CheckListFactory.getCheckedData(id).then((response) => {
-  //     console.log(response);
-  //     ctrl.versions = response.data;
-  //   }).catch((error) => {
-  //     console.log("checklist error", error);
-  //   })
-  // };
 
-  $scope.users = [];
+  $scope.userProject = [];
+  $scope.test = "test string";
+
+  let users = [];
+  let userFirstName;
 
   let getUsers = () => {
     ManagerFactory.getAllUsers().then((users) => {
+      userFirstName = users.firstName;
       $scope.users = users;
     }).catch((error) => {
       console.log("get users error", error);
@@ -21,15 +17,5 @@ app.controller("ManagerCtrl", function(ManagerFactory, $scope ){
   };
 
   getUsers();
-
-  $scope.getUserProjects = (id) => {
-    ManagerFactory.getProjects(id).then((projects) => {
-      console.log(projects);
-    }).catch((error) => {
-      console.log("get user projects error", error);
-    });
-  };
-
-
 
 });

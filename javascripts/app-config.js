@@ -54,5 +54,15 @@ app.config(function($routeProvider){
     controller: "ManagerCtrl",
     resolve: {isAuth}
   })
+  .when("/manager/:firstName/:id/projects", {
+    templateUrl: "partials/manager-projects.html",
+    controller: "ManagerProjectsCtrl",
+    resolve: {isAuth}
+  })
+  .when("/manager/checklist/:taskName/:id", {
+    templateUrl: "partials/manager-checklist.html",
+    controller: "ManagerChecklistCtrl",
+    resolve: {isAuth}
+  })
   .otherwise("/auth");
 });

@@ -2,11 +2,17 @@ app.factory("ManagerFactory", function($q, $http, FIREBASE_CONFIG){
 
 
   let getProjects = (id) => {
-    console.log(id);
+    let projects = [];
     return $q((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/projects.json?orderBy="uid"&equalTo="${id}"`).then((result) => {
-        console.log(result.data);
-        // resolve(result);
+        let dateCollect = result.data;
+          if(dateCollect !== null){
+            Object.keys(dateCollect).forEach((key) => {
+              dateCollect[key].id=key;
+              projects.push(dateCollect[key]);
+            });
+          }
+          resolve(projects);
       }).catch((error) => {
         reject(error);
       });

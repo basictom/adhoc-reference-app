@@ -36,7 +36,7 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $l
     })
   };
 
-  findCheckedData(projectId);
+  // findCheckedData(projectId);
 
   $scope.submitChecklist = () => {
     CheckListFactory.postChecklist(this.userResponse(), projectId).then((response) => {

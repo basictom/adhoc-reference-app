@@ -30,10 +30,17 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
   }
 
   let getCheckedData = (id) => {
-    console.log("inside factory", id);
+    let checklist = [];
     return $q((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/projects/${id}/checklist.json`).then((result) => {
-        resolve(result);
+        let dateCollect = result.data;
+          if(dateCollect !== null){
+            Object.keys(dateCollect).forEach((key) => {
+              dateCollect[key].id=key;
+              checklist.push(dateCollect[key]);
+            });
+          }
+          resolve(checklist);
       }).catch((error) => {
         reject(error);
       });
