@@ -29,7 +29,6 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $l
   let findCheckedData = (id) => {
     console.log(id);
     CheckListFactory.getCheckedData(id).then((response) => {
-      console.log(response);
       ctrl.versions = response.data;
     }).catch((error) => {
       console.log("checklist error", error);

@@ -1,21 +1,23 @@
 app.controller("ManagerChecklistCtrl", function(CheckListFactory, $scope, $location, $rootScope, $routeParams ){
 
-console.log("hitting manager checklist controller");
-
-  // $scope.userProject = [];
-  // $scope.test = "test string";
+  this.fields = [
+    "PSD - Copied to the Server",
+    "HTML",
+    "Text",
+    "Images",
+    "Cell Id",
+    "ASF / Marketing Plan / PID File",
+    "Grid",
+  ];
 
   $scope.projectChecklist = [];
 
-  //
   $scope.name = $routeParams.taskName;
   let projectId = $routeParams.id;
 
   let findCheckedData = (id) => {
-    console.log(id);
     CheckListFactory.getCheckedData(id).then((response) => {
-      console.log(response);
-      $scope.projectChecklist = response;
+      $scope.projectChecklist = indexByAttr(response);
     }).catch((error) => {
       console.log("checklist error", error);
     })
@@ -23,6 +25,14 @@ console.log("hitting manager checklist controller");
 
   findCheckedData(projectId);
 
-
+  let indexByAttr = (coll) => {
+    return coll.reduce(function(result, item){
+      angular.forEach(item, function(value, index) {
+        result[index] = result[index] || [];
+        result[index].push(value);
+      });
+      return result;
+    }, {});
+  }
 
 });

@@ -15,6 +15,18 @@ a {
 h3 {
   margin-top:25px;
 }
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+}
 .text-right {
   text-align:right;
 }
