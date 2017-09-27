@@ -244,3 +244,10 @@ th, td {
     border-radius: 2px;
     outline:none;
 }
+
+.red-bg {
+  background-color:mediumseagreen;
+}
+.green-bg {
+  background-color: lightcoral;
+}

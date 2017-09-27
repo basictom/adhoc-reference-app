@@ -35,4 +35,12 @@ app.controller("ManagerChecklistCtrl", function(CheckListFactory, $scope, $locat
     }, {});
   }
 
+  $scope.addedBgColor = (val) => {
+    if(val == true){
+      return "green-bg";
+    }else if(val == false){
+      return "red-bg";
+    }else{};
+  };
+
 });

@@ -8,10 +8,8 @@ app.controller("ManagerProjectsCtrl", function(ManagerFactory, $scope, $location
   let userUid = $routeParams.id;
 
   let getUserProjects = (id) => {
-    console.log(id);
     ManagerFactory.getProjects(id).then((returns) => {
       $scope.userProjects = returns;
-      console.log($scope.userProjects);
     }).catch((error) => {
       console.log("get user projects error", error);
     });

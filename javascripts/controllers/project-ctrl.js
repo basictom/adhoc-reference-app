@@ -30,7 +30,6 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
 
   let getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
-      console.log(results);
       $scope.projects = results;
     }).catch((error) => {
       console.log("get proj error", error);

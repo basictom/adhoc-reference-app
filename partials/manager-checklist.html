@@ -1,14 +1,17 @@
   <h2>{{name}}</h2>
-
-
-
-
     <div class="col-md-12">
       <table>
         <tr ng-repeat="(index, values) in projectChecklist track by index">
           <th>{{index}}</th>
-          <td ng-repeat="value in values track by $index">
+          <td ng-repeat="value in values track by $index" ng-class="addedBgColor(value)">
             {{value}}
+          </td>
+        </tr>
+      </table>
+      <table ng-if="projectChecklist.length===null">
+        <tr>
+          <td>
+            No Checklist filled out.
           </td>
         </tr>
       </table>
