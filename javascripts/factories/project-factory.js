@@ -1,34 +1,8 @@
 app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  let getTimeStamp = () => {
-      const now = new Date();
-      return ((now.getMonth() + 1) + '/' +
-              (now.getDate()) + '/' +
-               now.getFullYear() + " " +
-               now.getHours() + ':' +
-               ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' +
-               ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
-  }
-
-  let count = 0;
-  let timeStamp = [];
-
-  let updateTimeStamp = () => {
-
-    timeStamp[count] = getTimeStamp();
-
-    let arrayLength = timeStamp.length;
-    let click = count + 1;
-    for (var i = 0; i < arrayLength; i++) {
-      timeStamp[i];
-    }
-    count++;
-    newTime = timeStamp.pop();
-  }
-
-  let newDate = getTimeStamp();
-
   let addProject = (p) => {
+    let date = moment().format();
+    console.log(date);
     return $q((resolve, reject) => {
       $http.post(`${FIREBASE_CONFIG.databaseURL}/projects.json`, JSON.stringify({
         "assets" : p.assets,
@@ -38,7 +12,7 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
           "active" : true
         },
         "creativeServer" : p.creative,
-        "createdOn" : newDate,
+        "createdOn" : date,
         "imageServer" : p.imageServer,
         "jiraTicket" : p.jira,
         "notes" : p.notes,

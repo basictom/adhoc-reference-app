@@ -30,6 +30,11 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
 
   let getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
+      for(x=0;x<results.length;x++){
+        let date = results[x].createdOn;
+        console.log(moment(date).format('YYYY/MM/DD, h:mm:ss a'));
+        results[x].createdOn = moment(date).format('YYYY/MM/DD, h:mm:ss a');
+      }
       $scope.projects = results;
     }).catch((error) => {
       console.log("get proj error", error);
