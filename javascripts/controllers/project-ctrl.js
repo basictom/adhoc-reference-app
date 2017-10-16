@@ -24,25 +24,37 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     });
   };
 
-  let confirmation = () => {
 
-  }
 
   let getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
       for(x=0;x<results.length;x++){
         let date = results[x].createdOn;
-        console.log(moment(date).format('YYYY/MM/DD, h:mm:ss a'));
-        results[x].createdOn = moment(date).format('YYYY/MM/DD, h:mm:ss a');
+        results[x].createdOn = moment(date).format('M/DD/YY h:mm:ss a');
+        results[x].sortedBy = moment(date).format('YYYY/MM/DD, h:mm:ss a');
       }
+      checkForChecklist(results);
       $scope.projects = results;
     }).catch((error) => {
       console.log("get proj error", error);
     });
   };
 
+
+  // $scope.disabled = true;
+
+
   getProjects();
 
+  let checkForChecklist = (obj) => {
+    obj.forEach(function(x){
+      let check = x.checklist;
+      // console.log(check);
+      for(let active in check){
+        // console.log(active);
+      }
 
+    })
+  }
 
 });
