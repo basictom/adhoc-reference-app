@@ -51,23 +51,13 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     })
   };
 
-  findCheckedData();
+  // findCheckedData();
 
   $scope.changeCheck = (project) => {
-    console.log(project);
+    // console.log(project.id);
+    $location.url(`/checklist/${project.id}`);
   }
 
   getProjects();
-
-  let checkForChecklist = (obj) => {
-    for(x=0;x<obj.length;x++){
-      let state = obj[x].active;
-      if(state === false){
-        return 'disabled';
-      }else{
-        return;
-      }
-    }
-  };
 
 });

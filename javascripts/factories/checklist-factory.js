@@ -1,39 +1,5 @@
 app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  let postChecklist = (listItems, id) => {
-    return $q((resolve, reject) => {
-      for(i=0;i<listItems.length;i++){
-        let asf = listItems[i]["ASF / Marketing Plan / PID File"];
-        let grid = listItems[i].Grid;
-        let psd = listItems[i]["PSD - Copied to the Server"];
-        let html = listItems[i].HTML;
-        let images = listItems[i].Images;
-        let text = listItems[i].Text;
-        let cellId = listItems[i]["Cell Id"];
-        $http.post(`${FIREBASE_CONFIG.databaseURL}/checklists.json`, JSON.stringify({
-          "active" : true,
-          "uid" : $rootScope.user.uid,
-          "projectId" : id,
-          "Grid" : grid,
-          "ASF" : asf,
-          "PSD" : psd,
-          "HTML" : html,
-          "IMAGES" : images,
-          "TEXT" : text,
-          "CELLID" : cellId
-        }))
-        .then((result) => {
-          // console.log(result.data.name);
-          markTrue(id);
-          resolve(result);
-        }).catch((error) => {
-          reject(error);
-        });
-      }
-    });
-  }
-
-
   // let postChecklist = (listItems, id) => {
   //   return $q((resolve, reject) => {
   //     for(i=0;i<listItems.length;i++){
@@ -44,7 +10,10 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
   //       let images = listItems[i].Images;
   //       let text = listItems[i].Text;
   //       let cellId = listItems[i]["Cell Id"];
-  //       $http.post(`${FIREBASE_CONFIG.databaseURL}/projects/${id}/checklist.json`, JSON.stringify({
+  //       $http.post(`${FIREBASE_CONFIG.databaseURL}/checklists.json`, JSON.stringify({
+  //         "active" : true,
+  //         "uid" : $rootScope.user.uid,
+  //         "projectId" : id,
   //         "Grid" : grid,
   //         "ASF" : asf,
   //         "PSD" : psd,
@@ -54,7 +23,8 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
   //         "CELLID" : cellId
   //       }))
   //       .then((result) => {
-  //         console.log(result);
+  //         // console.log(result.data.name);
+  //         markTrue(id);
   //         resolve(result);
   //       }).catch((error) => {
   //         reject(error);
@@ -63,7 +33,35 @@ app.factory("CheckListFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
   //   });
   // }
 
- // ?orderBy="uid"&equalTo="${userId}"
+
+  let postChecklist = (listItems, id) => {
+    return $q((resolve, reject) => {
+      for(i=0;i<listItems.length;i++){
+        let asf = listItems[i]["ASF / Marketing Plan / PID File"];
+        let grid = listItems[i].Grid;
+        let psd = listItems[i]["PSD - Copied to the Server"];
+        let html = listItems[i].HTML;
+        let images = listItems[i].Images;
+        let text = listItems[i].Text;
+        let cellId = listItems[i]["Cell Id"];
+        $http.post(`${FIREBASE_CONFIG.databaseURL}/projects/${id}/checklist.json`, JSON.stringify({
+          "Grid" : grid,
+          "ASF" : asf,
+          "PSD" : psd,
+          "HTML" : html,
+          "IMAGES" : images,
+          "TEXT" : text,
+          "CELLID" : cellId
+        }))
+        .then((result) => {
+          console.log(result);
+          resolve(result);
+        }).catch((error) => {
+          reject(error);
+        });
+      }
+    });
+  }
 
  let markTrue = (projectId) => {
    return $q((resolve, reject) => {

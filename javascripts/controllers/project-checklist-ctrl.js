@@ -69,6 +69,7 @@ app.controller("ProjectChecklist", function($scope, $rootScope, $routeParams, $l
   $scope.submitChecklist = () => {
     CheckListFactory.postChecklist(this.userResponse(), projectId).then((response) => {
       // console.log(response.data);
+      $location.url("/projects");
     }).catch((error) => {
       console.log("checklist error", error);
     })
