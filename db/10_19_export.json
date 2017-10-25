@@ -1,0 +1,619 @@
+{
+  "projects" : {
+    "-KrkhegdRxOkBBJTG72W" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\TDC_CVSH_T3\\DEVS",
+      "cellid" : "Mailing ID: 394338899; V1: 759729; V2: 759730;",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "V1 Template: 486188779__ Footer: 486134439__; V2 Template: 486188839__;",
+      "createdOn" : "8/17/2017 16:35:38",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_30_TDC_CVSH",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_08_30_TDC_CVSH",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-26271",
+      "notes" : "- Footer looks to be using the 'new style' but missing the Caremark logo\n- Left Images, No ALT text\n\n- ***NEW FOOTER*** 486367739 ***NEW V1*** 486367809 ***NEW V2: 486368359***",
+      "taskName" : "Caremark_17_08_30_TDC_CVSH_T3",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : ""
+    },
+    "-KrpiMgXtu2YyT-0VqF6" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\TDC_CBC_T3\\DEVS",
+      "cellid" : "Mailing ID: 394348559",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "TEMPLATE: 486134409__; NEW TEMPLATE: 486370919;;",
+      "createdOn" : "8/22/2017 10:25:04",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_30_TDC_CBC",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_08_30_TDC_CBC",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-26322",
+      "notes" : "FROM PRODUCTION: I have a 1 version PSD build for Caremark. FYI, this mailing has an emoji in the Subject Line",
+      "taskName" : "Caremark_17_08_30_TDC_CBC_T3",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : ""
+    },
+    "-KsFoXCPBRz9gK0-N0Xx" : {
+      "cellid" : "CLONED FOOTER: 502379341__",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "createdOn" : "8/23/2017 15:34:18",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CTESVUS-18934",
+      "notes" : "The Events Team over at BCBS is looking to update their template in our system with a new footer that is already in production in other BCBS mailings. The cell information is below and I cloned the footer content object and applied it to the cell. Their team would like the footer to match the width of the template. As it stands right now, there is white space on either side of the footer.",
+      "taskName" : "BCBS Footer Update",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : ""
+    },
+    "-KsOmhwKRd0i9gojqhAu" : {
+      "assets" : "\\\\Fs1\\Clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170824_SmartShopperBuilds",
+      "cellid" : "mailingId=1093500481",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "createdOn" : "8/31/2017 11:46:51",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\PSD_to_Responsive_build_2_versions",
+      "imageServer" : "N/A",
+      "notes" : "------------------- NOTE FROM PRODUCTION --------------------------------\n*Please remove the Social Media Icons in the footer.\n*Adam wasn't too sure what should be linked, but be please use your best judgment of what should be linked (CTAs, URLs in the content, etc....).\n*Please use our placeholder link for ALL links (privacy policy, unsub, etc...).\n*Once completed, we should be sending over the HTML files and the image slices for that company to host the images.\n*Use best judgement for Alt Text.\n--------------------------------------------------------------------------------------------------------------\n\n- I hosted the images on fs1 for testing purposes. The final HTML images all have \"./images/..\" file path, which is pointing to an images folder inside of the root folder. (possibly a poor description, please let me know if this is confusing.)\n- Email Registration has a different disclaimer above the footer for mobile and desktop.\n- The Disclaimer's both have an apostrophe right after the trade mark symbol in the PSD, I assume this is a typo and have deleted it.",
+      "taskName" : "BCBS > PSD to Responsive HTML - 2 versions",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : ""
+    },
+    "-Ksj4YJlJ2V8hrfi7SeQ" : {
+      "assets" : "\\\\fs1\\creative_services\\Citizens\\2017\\MMA_Rate_Hoppers\\FA_R9",
+      "cellid" : "cell id: 3402780",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "Given Content Object: 502406381 --- NEW OBJ's ::  platinum_v1: 502444261, platinum_v2: 502444271, premier_v1: 502444281, premier_v2: 502444291",
+      "createdOn" : "8/31/2017 15:11:17",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\MMA_Rate_Hoppers",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\MMA_Rate_Hoppers",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27134",
+      "notes" : "- Premier version / \"*Based on balances in the account as of x/xx/xx\" looks like it is going to be mapped by audience of versioncode? Please specify.\n- The bulleted '12-month rate' looks like it is going to utilize a multival to loop through the given data per customer. The PSD gives six 'examples' however, I only used one in the build. If this is not the case and there are going to be six static bullet points please let me know. \n- ASF mentions to 'use deploy date' I used a placeholder symbol called _DEPLOYDATE__\n- Rates and region name are going to need to pull in through the joins from the rates table. If this is to be done on my end please advise.\n- Can you please provide the text for the disclaimer for platinum_plus_2. Currently Only one PSD for both versions, text cannot be copied from image/pdf.\n- Given the lack of specification I'm assuming that all four versions are going to be mailed out of the same cell and will be split by audience, which there are currently only two.",
+      "taskName" : "CITZBK0003 - MMA Rate Hoppers",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 10:54:38"
+    },
+    "-KstRrpCPXKu51c_YNu1" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\09_September\\MNN_POST_IMPLEMENT\\DEVS",
+      "cellid" : "Mailing ID: 396821919",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "OLD template ID: 486280409__ NEW TEMPLATE ID ::: 486414319",
+      "createdOn" : "8/31/2017 15:14:35",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_09_18_MNN",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_09_18_MNN",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27826",
+      "notes" : "I have a one-version Caremark PSD build. Please note, there is a merge field in the body copy for Effective Date. You can use the\n_DATE__\nsymbol for this field.",
+      "taskName" : "Caremark_17_09_18_MNN_Post_Implementation",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 10:22:57"
+    },
+    "-Ksxxtth3LfWOYYknNLl" : {
+      "assets" : "\\\\Fs1\\Clients\\CVS\\CVS_SPECIALTY\\Campaigns\\2017\\Q3\\Specialty_17_09_14_FULL\\DevRequest",
+      "cellid" : "Cell Id: 53631 || Cell Id: 53630 || Cell Id: 53632 || Cell Id: 53626 ---- Mailing Id: 397191589",
+      "checklist" : {
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "Old Template Id: (A)486342589__; (B)486342599__; (C) 486342609__; (D) 486342619__; || 42983A : 486436499 || 42983B : 486436709 || 42983C : 486437089 || 42983D : 486437099",
+      "createdOn" : "9/1/2017 9:29:36",
+      "creativeServer" : "\\\\fs1\\creative_services\\CVSspecialty\\2017\\SPECIALTY_17_09_14_MHT_FULL",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\cvsspecialty\\2017\\SPECIALTY_17_09_14_MHT_FULL",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-28057",
+      "notes" : "Not sure if it helps, but for the links, you can replace part of the link (Webtrends) with the \"WEBTRENDS\" symbol. Example below:\nFrom - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*ME_EMAIL_SPECIALTY_17_09_UR_CORE_FULL_75-42983B*_Logo\nTo - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*_WEBTRENDS__*_Logo",
+      "taskName" : "CVS 170914 SPECIALTY_17_09_14_MHT_FULL",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/6/2017 11:11:08"
+    },
+    "-Ktmglk2KzJO8reC1n5V" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\09_September\\DTD\\FULL\\DevRequest",
+      "cellid" : "Mailing Id: 396992259 || Cell IDs: 765181, 765182, 765183, 765184, 765185, 765186",
+      "checklist" : {
+        "-KuQ2W1554iahf060AFr" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : true,
+          "PSD" : true,
+          "TEXT" : false
+        },
+        "-KuQ2YNNjQG3PF9O_tf6" : {
+          "ASF" : false,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : true,
+          "TEXT" : false
+        },
+        "-KuQ2YNPtoEmqO9RCN3L" : {
+          "ASF" : true,
+          "CELLID" : false,
+          "Grid" : true,
+          "HTML" : false,
+          "IMAGES" : true,
+          "PSD" : true,
+          "TEXT" : false
+        },
+        "-KuQ2YNaqG1TQp4r85AO" : {
+          "ASF" : true,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : true,
+          "PSD" : false,
+          "TEXT" : false
+        },
+        "-KuQ2YOTLtuy9fttrjnC" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : true
+        },
+        "checklistOne" : {
+          "test" : "test value"
+        }
+      },
+      "contentid" : "NEW 36876A: 486464169 || NEW 36876B: 486464179 || NEW 36876C: 486464189 || NEW 37109A: 486464199 || NEW 37109B: \t486464209  ||  NEW 37109C: 486464219  || 36876A: 486315349__ || 36876B: 486315499__ || 36876C: 486317219__ || 37109A: || 37109B: 486317489__ || 37109C: 486317659__",
+      "createdOn" : "9/11/2017 9:52:02",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_09_19_DTD_September",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\caremark\\2017\\17_09_19_DTD",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27886",
+      "notes" : "Subject lines contain Emojis\n\n- ASF does not contain links for 'Download Our App (footer button)' and  'Enroll in Text Rx Alerts' Placeholder used instead. 'FOOTER - Download Our App' and 'FOOTER - Enroll in Text Rx Alerts' used for report names.\n- ALT text for Hero image is as noted in the ASF",
+      "taskName" : "Caremark_17_09_19_DTD_September_FULL_SLTests",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/12/2017 17:12:45"
+    },
+    "-KtvYrpUcX-ESfMyt6lk" : {
+      "assets" : "\\\\fs1\\clients\\Caremark\\Client_Assets\\2017\\08_August\\EMERGENCY_HURRICANE\\DEVS2",
+      "cellid" : "765654",
+      "contentid" : "OLD: 486411139__ NEW: 486466439",
+      "createdOn" : "9/13/2017 9:04:07",
+      "creativeServer" : "\\\\fs1\\creative_services\\Caremark\\2017\\Caremark_17_08_Emergency_TX_Hurricane\\VERSION_TWO",
+      "imageServer" : "N/A",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-27667",
+      "notes" : "--------------------------------------------------\nCaremark is looking to have another version of the Hurricane message be created and provided a new PSD (resembles the previous build).\n--------------------------------------------------\n\n- As discussed, leaving out '[Add information on mobile or pop-up pharmacies as appropriate]' as there is not relevant data yet. Please let me know if/when this changes.\n- CITY and STORMNAME left as TBD\n- No mention to link 'CVSHealth.com' within body copy. Please let me know if this is in correct.\n- 'Download Our App' and 'Enroll in Text Rx Alerts' links are the same from previous build. No mention to change them in the ASF.",
+      "taskName" : "Caremark_17_08_Emergency_TX_Hurricane",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/19/2017 19:56:49"
+    },
+    "-KuVFGQk8DAdTfPOsIwU" : {
+      "checklist" : {
+        "active" : true
+      },
+      "createdOn" : "9/20/2017 12:06:01",
+      "taskName" : "Larry's Test Project",
+      "uid" : "jVYfxPEPIJMg9GWI0etNgTHZXQw2"
+    },
+    "-KuVZSNh5zmI_paaPTyf" : {
+      "assets" : "\\\\fs1\\Clients\\Citizens_Bank\\Client_Assets\\2017\\Q4_2017\\2017_HEQ_Cycle_6\\Assets_Responsive_Version",
+      "cellid" : "Mailing ID: 1100717441 Cell: 3442316",
+      "checklist" : {
+        "-Kv2lX4OPnZfoli-Sn3A" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : true,
+          "IMAGES" : true,
+          "PSD" : true,
+          "TEXT" : true
+        },
+        "-Kv2lX4QgWgBvN5wDjOy" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false
+        },
+        "-Kv2lX5J5QqFpKsVzI-f" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false
+        }
+      },
+      "contentid" : "OLD CONTENT OBJECT: 502566421__ || NEW: 502570801",
+      "createdOn" : "9/20/2017 13:33:39",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\201710_HEQ_Cycle6",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30072",
+      "notes" : "----------- FROM PRODUCTION ---------------\nNote: The layout is very similar to the Cycle 5 DO6 version - it appears the main change for the\nresponsive version is the change to the Nav bars at top and bottom.\n----------------------------------------------------------\n\n- PSD shows \"Borrow $BBB for $CCC tper month at a rate as low as DDD% APR.1\" It looks like 'tper' is a typo. I put 'per' in the build.\n- As noted in the ticket, links are in ASF for build CB-DO7-EM-HEQ. They do not exactly reflect this emails version (CB-DO6-EM-HEQ) Production will need to review these carefully to make sure all links are correct.",
+      "taskName" : "Citizens_201710_HEQ_Cycle6",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/22/2017 11:17:25"
+    },
+    "-KuzN5-BlvwRq1QNh_TN" : {
+      "assets" : "OLD LP's :: \\\\it-fs-ln\\graphics\\fsimages\\citizensbank\\2017\\2017_Q4_Platinum_Newsletter || \\\\fs1\\Clients\\Citizens_Bank\\Client_Assets\\2017\\Q4_2017\\201710_Oct_Platinum_Newsletter\\Assets",
+      "cellid" : "Cell ID: 3451417",
+      "checklist" : {
+        "-Kv2g1FwnyIcV6V69aJg" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : true,
+          "IMAGES" : true,
+          "PSD" : true,
+          "TEXT" : true
+        }
+      },
+      "contentid" : "OLD :: Content Obj: 502595041 || NEW :: 502596221",
+      "createdOn" : "9/26/2017 13:02:43",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\201710_Platinum_Newsletter",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\201710_Platinum_Newsletter",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30699",
+      "notes" : "- No ASF. Please provide links/Report Names/ Subject Lines/ etc. Some links were provided in the word documents for the landing pages but not all.\n- NEW content object : 502596221 \n- The given 'creative assets' were vague and could be easily confused. PLEASE thoroughly check them to make sure this is what the client wants/is expecting.\n- Below are the paths for the two landing pages.\n\nhttp://img.ed4.net/citizensbank/2017/201710_Platinum_Newsletter/landing_01.html\nhttp://img.ed4.net/citizensbank/2017/201710_Platinum_Newsletter/landing_02.html",
+      "taskName" : "Citizens_201710_Platinum_Newsletter",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/27/2017 9:13:49"
+    },
+    "-Kv4ESxnazEfEOspq3BR" : {
+      "assets" : "\\\\Fs1\\Clients\\CVS\\CVS_SPECIALTY\\Campaigns\\2017\\Q4\\Specialty_17_10_11_FULL\\DevRequest",
+      "cellid" : "43296A :: Cell Id: 60043 || 43296B :: 60047",
+      "contentid" : "OLD :: 43296A :: 486437099__ || 43296B :: 486436709__ || NEW :: 43296A :: 486507069 || 43296B :: 486507079 ***FOOTER*** old: 486342729__ || new: 486507959",
+      "createdOn" : "9/27/2017 16:27:08",
+      "creativeServer" : "\\\\fs1\\creative_services\\CVSspecialty\\2017\\SPECIALTY_17_10_10_FULL",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\cvsspecialty\\2017\\SPECIALTY_17_10_10_FULL",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30142",
+      "notes" : "Not sure if it helps, but for the links, you can replace part of the link (Webtrends) with the \"WEBTRENDS\" symbol. Example below:\nFrom - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*ME_EMAIL_SPECIALTY_17_09_UR_CORE_FULL_75-42983B*_Logo\nTo - http://securemessage.cvsspecialty.com/smaprmk/?WT.mc_id=*_WEBTRENDS__*_Logo\nPlease let me know if you need anything else!\n--------------------------------------------------------------------------\n- 43296A Brand Bar reportname inconsistent with text. BB - \"Get started with secure messaging\" ASF Report name - \"Refill Now\"\n- Both versions. No link in ASF for 'Try it Out' button. Placeholder used instead. Reportname used, 'BUTTON - Try it Out'\n- Not sure this our concern but there looks to be typo in the header image. \"In\" I think should be \"An\". It just looks strange to me.",
+      "taskName" : "CVS 171010 SPECIALTY_17_10_10_FULL",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/29/2017 9:03:36"
+    },
+    "-Kv8A5w2RY3jfF0gPCE0" : {
+      "assets" : "\\\\Fs1\\Clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170921_OFTNewTemplates\\20171001_176314_HealthEngagementRecognitionProgram",
+      "cellid" : "Cell Id: 175318 Technically N/A",
+      "contentid" : "FOOTER USED: 498136201__ || HEADER USED: 502416181__",
+      "createdOn" : "9/28/2017 9:07:54",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\171001_176314_Health_Engagement_Recognition_Program",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\bcbs\\2017\\171001_176314_Health_Engagement_Recognition_Program",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30906",
+      "notes" : "Here is a PSD to HTML build; however, this is a build that BCBS will be sending out of their own Outlook.\nNotes from Rachel are here:\nMark ALL links as Do Not Report\nRemove Hosted Link, Unsub Link, Privacy, F2f, and any other PC7 links\nPlease use links from link matrix\n-------------------------------------------------\n- The 'view in browser' link is utilizing the placeholder link. There was no direction as to weather we are going to host this HTML and link through that, or it was going to be handled on BCBS side. I imagine we would host it but please advise.\n- The email privacy policy in the footer has been left as \"http://www.bluecrossma.com/terms-of-use.html\" \n- The unsubscribe link is utilizing the placeholder, no mention of it in the link doc",
+      "taskName" : "BCBS 171001 176314 - Health Engagement Recognition Program || PSD to HTML for Outlook Build",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/28/2017 15:55:16"
+    },
+    "-KvCsZiJNhLEr-onWRBO" : {
+      "assets" : "\\\\Fs1\\Clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170921_OFTNewTemplates\\20171002_176606_BiometricImprovementProgramThankYouFollowUp",
+      "cellid" : "175320",
+      "createdOn" : "9/29/2017 8:44:31",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\176606_Biometric_Improvement_Program_Thank_You_Follow_Up_Email",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\bcbs\\2017\\176606_Biometric_Improvement_Program_Thank_You_Follow_Up_Email",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30911",
+      "notes" : "Here is a PSD to HTML build; however, this is a build that BCBS will be sending out of their own Outlook.\nNotes from Rachel are here:\nMark ALL links as Do Not Report\nRemove Hosted Link, Unsub Link, F2f, Privacy and any other PC7 links\nPlease use links from link matrix",
+      "taskName" : "176606 - Biometric Improvement Program Thank You Follow Up Email",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/29/2017 8:59:25"
+    },
+    "-KvDS1pUIxKObwEG6m15" : {
+      "assets" : "\\\\fs1\\Clients\\BlueCrossBlueShield\\Client_Assets\\2017\\Q4\\17_10_05_176708D_September2017_eNews_BROKER",
+      "cellid" : "cell id: 175351",
+      "createdOn" : "9/29/2017 8:44:31",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\176708D_September2017_eNews_BROKER",
+      "imageServer" : "",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30967",
+      "notes" : "Please build out and use template: 40148 in pc7.\n-------------------------------------------------------------------\n- Article 8 refers to a 'subhead'. I am not familiar with this build, nor is there a creative or example in another article. It has been bolded to stand out from both the header and body text.\n- Reportnames reflect the article # and link text, ex: \"ARTICLE 8 Press release\"",
+      "taskName" : "176708D_September2017_eNews_BROKER",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "9/29/2017 13:00:14"
+    },
+    "-KvgqeJ6kEkr2GPbrxNV" : {
+      "assets" : "\\\\fs1\\clients\\Citizens_Bank\\Client_Assets\\2017\\Q4_2017\\201710_Oct_SpeciFi\\11.7 Assets",
+      "cellid" : "Cell Id: 3461652",
+      "contentid" : "OLD Content ID: 502563891__ NEW: 502672451",
+      "createdOn" : "10/5/2017 8:59:24",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\201710_Oct_SpeciFi",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\201710_Oct_SpeciFi",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30000",
+      "notes" : "Please build the PSD into HTML and create a content object for it. Please ensure the PSD and the PDF match. Also, Can we make the watch more copy a little smaller, so as not to compete with the larger call to action? Please let me know if you have any questions.\n----------------------------------------------------------------------------------------------------------------------------------------\n- The previous build had all of the items in the header linked, not just the Citizens Logo. I left it as is and used (citizensbank.com/MySpeciFi) for all the Links. The report names for each link is SpeciFi\n- I would assume the image of the video would be a link, but no mention of it in the ASF or task.",
+      "taskName" : "CitizensBank_201710_Oct_SpeciFi",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/5/2017 17:52:33"
+    },
+    "-Kvh-YIFJ6nO9sPLG1B9" : {
+      "cellid" : "Cell: 3444104",
+      "contentid" : "OLD: 502569601__ NEW: 502671481",
+      "createdOn" : "10/5/2017 8:59:24",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\201710_Oct_Zelle_Prelaunch",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\201710_Oct_Zelle_Prelaunch",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-31854",
+      "notes" : "Requested changes -\n1) incorporate Zelle logo into headline - Introducing Zelle\nlogo is attached - Zelle_RGB.jpg\n2) Add orange 'Learn More' button in spot designated on PDF\n(let me know if you need a sample)\n3) miscellaneous text updates\n4) removal of a lot of detailed text",
+      "taskName" : "Citizens_170921_Oct_Zelle_Prelaunch - revisions to HTML",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/5/2017 11:21:42"
+    },
+    "-Kw0cSdOM-4QOw9Nbm-p" : {
+      "assets" : "\\\\Fs1\\Clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170921_OFTNewTemplates\\20171023_176024_HealthEngagementRecognitionProgramB2B",
+      "cellid" : "Cell Id: 175321 OUTLOOK Cell Id: 178014",
+      "checklist" : {
+        "-Kw6H4bqPh4yCQShAEDO" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : true,
+          "IMAGES" : true,
+          "PSD" : true,
+          "TEXT" : true
+        }
+      },
+      "contentid" : "OLD: 501822751__ ||",
+      "createdOn" : "2017-10-09T09:55:05-05:00",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\171023_176024_Health_Engagement_Recognition",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\bcbs\\2017\\171023_176024_Health_Engagement_Recognition",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-30916",
+      "notes" : "For the OFT/Outlook version - Notes from Rachel are here:\nMark ALL links as Do Not Report\nRemove Hosted Link, Unsub Link, F2f, Privacy and any other PC7 links\nAt this point, please put placeholders for links (for both versions)",
+      "taskName" : "BCBS 171023 176024 - Health Engagement Recognition",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/9/2017 15:38:02"
+    },
+    "-Kw6p8vtMg6NKLgkRT-n" : {
+      "taskName" : "TESTING Out NEW POST"
+    },
+    "-Kw7-pJPuHKTQZpwYamt" : {
+      "taskName" : "TESTTTING"
+    },
+    "-Kw70b4lLXMDohj_rLqE" : {
+      "assets" : "\\\\fs1\\clients\\BlueCrossBlueShield\\_AdhocRequests\\2017\\20170921_OFTNewTemplates\\20171015_175633_BiometricImprovementProgramAnnouncementEmailtoAccounts",
+      "cellid" : "Cell Id: 178207",
+      "contentid" : "N/A",
+      "createdOn" : "2017-10-10T15:42:39-05:00",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\175633_Biometric_Improvement_Program_Announcement",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\bcbs\\2017\\175633_Biometric_Improvement_Program_Announcement",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-32486",
+      "notes" : "Here is a PSD to HTML build; however, this is a build that BCBS will be sending out of their own Outlook.\nNotes from Rachel are here:\nMark ALL links as Do Not Report\nRemove Hosted Link, Unsub Link, F2f, Privacy and any other PC7 links\nPlease use links from link matrix\n----------------------------------------------------------------------------------------------\n- Text in PSD is actually an image. Font-sizes not exact, but close to PSD layout. Please check spelling \n-",
+      "taskName" : "BCBS - 175633 - Biometric Improvement Program Announcement",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/11/2017 10:06:45"
+    },
+    "-KwB-e7yZCP-J6jXcwSe" : {
+      "assets" : "\\\\fs1\\Clients\\Citizens_Bank\\Client_Assets\\2017\\Q4_2017\\201710_Oct_Fraud_Awareness\\Assets",
+      "cellid" : "Cell Id: 3419348",
+      "contentid" : "OLD :: 500325201__ || NEW:  v1: 502693731 v2: \t502693891",
+      "createdOn" : "2017-10-11T10:16:59-05:00",
+      "creativeServer" : "\\\\fs1\\creative_services\\Citizens\\2017\\201710_October_Fraud_Email",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\citizensbank\\2017\\201710_October_Fraud_Email",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-28558",
+      "notes" : "Please create the 2 version of the email in the content library. Please incorporate the mobile versions in the coding of each asset.\nPlease keep the HTML as close to the PDF as possible. Let me know if you have any questions.\n-------------------------------------------------------------------------------------\n- No links for social Icons in the footer. Placeholder used\n- Placeholder link used for Apple/Google Badges for mobile",
+      "taskName" : "Citizens_201710_October_Fraud_Email",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/13/2017 11:05:42"
+    },
+    "-KwMKxmBsyBMho3mS4jU" : {
+      "assets" : "\\\\fs1\\clients\\BlueCrossBlueShield\\Client_Assets\\2017\\Q4\\17_10_19_176321-HEALTHYTIMESOCT17",
+      "cellid" : "Cell Id: 178929",
+      "contentid" : "OLD CONTENTART3 OBJ: 502177681__ || NEW CONTENTART1 VERSION1 : 502702421 || VERSION2 : 502702711",
+      "createdOn" : "2017-10-13T15:05:54-05:00",
+      "creativeServer" : "\\\\fs1\\creative_services\\BCBS\\2017\\17_10_19_176321_HEALTHYTIMESOCT17",
+      "imageServer" : "\\\\ed-smb1\\graphics\\fsimages\\bcbs\\2017\\17_10_19_176321_HEALTHYTIMESOCT17",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CCAOPUS-32992",
+      "notes" : "Please build out 2 versions\n----------------------------------------------\n- Is the 2 versions referring to desktop and mobile? Or is there suppose to be a second creative version?",
+      "taskName" : "BCBS 171019 176321 – Healthy Times - Fall 2017",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/17/17 10:40:39 am"
+    },
+    "-KwbDLS0UeUY-khDkp_R" : {
+      "assets" : "N/A",
+      "cellid" : "Cell Id: 1",
+      "checklist" : {
+        "-Kwfe-GOXLGKauPGPBr3" : {
+          "ASF" : true,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : true,
+          "IMAGES" : true,
+          "PSD" : false,
+          "TEXT" : true
+        },
+        "-Kwfe-GThmHQDErUOtD2" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : true,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : true,
+          "TEXT" : false
+        },
+        "-Kwfe-GThmHQDErUOtD3" : {
+          "ASF" : false,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false
+        },
+        "-Kwfe-G__TB-UN3F_5I0" : {
+          "ASF" : false,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : true
+        }
+      },
+      "createdOn" : "2017-10-16T17:06:33-05:00",
+      "creativeServer" : "N/A",
+      "imageServer" : "N/A",
+      "jiraTicket" : "https://pm.zetainteractive.com:8443/browse/CTESVUS-20214",
+      "notes" : "We have a new schema JP Morgan Chase - setup for a disaster recovery schema (if Axciom failed). I have attached sample HTML that we can use to setup a cell; the goal is just to get proofs out to show the client we have a base setup.\nA few comments on the HTML:\n1) Don't worry about great rendering/responsive design, just want it to look decent on desktop.\n2) If any links are missing where the <a> tag is, please just use chase.com\n3) There may be some 3rd party tracking stuff still on this HTML, you can ignore or strip it out.. .we don't need it for these purposes.\n--------------------------------------------------------------------------------------------------------\n- Should this email have unsub and hosted links?\n- All links set to chase.com and doNotReport=\"true\"",
+      "taskName" : "JP Morgan Chase -HTML setup in PC7",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2",
+      "updatedOn" : "10/17/17 1:24:50 pm"
+    },
+    "-KwfjnUBb0uSYmHGaN1A" : {
+      "checklist" : {
+        "-KwfjuOp30bXOiGecs7V" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false,
+          "active" : true
+        },
+        "-KwfqWtJbJzeQvurc8rd" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : true,
+          "IMAGES" : false,
+          "PSD" : true,
+          "TEXT" : true,
+          "active" : true
+        },
+        "active" : false
+      },
+      "createdOn" : "2017-10-17T19:11:12.510Z",
+      "taskName" : "TESTING THINGS OUITI",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    },
+    "-Kwfr3W8ODbYqG3314jG" : {
+      "checklist" : {
+        "-Kwfr4HJLXuT_M_abZwG" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : true,
+          "TEXT" : false
+        },
+        "-KwfrXaXAfkBtq2s9ir9" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : true
+        },
+        "active" : false
+      },
+      "createdOn" : "2017-10-17T19:42:57.238Z",
+      "taskName" : "TEST TEST TEST",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    },
+    "-KwgP-0FJiAT3-YYGCUI" : {
+      "checklist" : {
+        "-KwgP54WEMT7DJJVUrR3" : {
+          "ASF" : true,
+          "CELLID" : true,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : true,
+          "TEXT" : true
+        },
+        "active" : false
+      },
+      "createdOn" : "2017-10-17T22:15:33.649Z",
+      "taskName" : "TEST PROJECT FOR FALSE VALUES",
+      "uid" : "uQc6PrZzeERCWqnpZPH5Mvw1hI13"
+    },
+    "-KwgP3Pc1eVjGzVU5abK" : {
+      "createdOn" : "2017-10-17T22:15:51.659Z",
+      "taskName" : "HELLO TEST VASLUIES",
+      "uid" : "uQc6PrZzeERCWqnpZPH5Mvw1hI13",
+      "updatedOn" : "10/17/17 9:15:38 pm"
+    },
+    "-KwpCZay2VJSB4uplQpn" : {
+      "checklist" : {
+        "-KwpCk23EAaZiODG1lfK" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : true,
+          "PSD" : false,
+          "TEXT" : true
+        },
+        "active" : false
+      },
+      "createdOn" : "2017-10-19T15:17:50.444Z",
+      "taskName" : "TESTING POST CHECKLIST",
+      "uid" : "uQc6PrZzeERCWqnpZPH5Mvw1hI13"
+    },
+    "-KwpCr6YB9IADbUnsXFM" : {
+      "checklist" : {
+        "-KwpDWGM1Rka1Q1l9IQ1" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false
+        },
+        "-KwpDdyL6xENUHJ-WhEN" : {
+          "ASF" : false,
+          "CELLID" : false,
+          "Grid" : false,
+          "HTML" : false,
+          "IMAGES" : false,
+          "PSD" : false,
+          "TEXT" : false
+        },
+        "active" : false
+      },
+      "createdOn" : "2017-10-19T15:19:06.508Z",
+      "taskName" : "NEW TEST FOR CHECKLISTS",
+      "uid" : "uQc6PrZzeERCWqnpZPH5Mvw1hI13"
+    }
+  },
+  "checklists" : {
+    "checkOne" : {
+      "active" : false,
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    }
+  },
+  "users" : {
+    "-Ku12XfDqK0DNDBSKnQg" : {
+      "email" : "larry@l.com",
+      "firstName" : "Larry",
+      "password" : "123456",
+      "uid" : "jVYfxPEPIJMg9GWI0etNgTHZXQw2"
+    },
+    "-KwgOx2wAGJa8qOFubYK" : {
+      "email" : "jwedge@zetaglobal.com",
+      "firstName" : "Joseph",
+      "password" : "123456",
+      "uid" : "uQc6PrZzeERCWqnpZPH5Mvw1hI13"
+    },
+    "user1" : {
+      "email" : "tfitzgerald@zetaglobal.com",
+      "firstName" : "Thomas",
+      "password" : "123456",
+      "uid" : "20qfyqXBM5S7yuJ5mKBciVADecv2"
+    },
+    "user3" : {
+      "email" : "resola@zetaglobal.com",
+      "firstName" : "Rachel",
+      "password" : "123456",
+      "uid" : "KAkmBrteQrSwcRHDC2AeZ8xn9Mn2"
+    }
+  }
+}

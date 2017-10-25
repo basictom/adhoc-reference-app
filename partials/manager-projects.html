@@ -5,11 +5,12 @@
       </div>
     </div>
 
-      <div class="col-xs-12 panel" ng-repeat="proj in userProjects | orderBy: '-createdOn'">
+      <div class="col-xs-12 panel" ng-repeat="proj in userProjects | orderBy: '-sortedBy'">
 
         <div class="col-xs-1"><button class="btn btn-info" ng-click="proj.show = !proj.show"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
         <div class="col-xs-7"><h3>{{proj.taskName}}</h3></div>
-        <div class="col-xs-4 text-right"><a ng-href="/#!/manager/checklist/{{proj.taskName}}/{{proj.id}}"><button class="btn btn-warning">QA checklist</button></a></div>
+        <div class="col-xs-2"><p>{{proj.createdOn}}</p></div>
+        <div class="col-xs-2 text-right"><a ng-href="/#!/manager/checklist/{{proj.taskName}}/{{proj.id}}"><button class="btn btn-warning">QA checklist</button></a></div>
 
 
 

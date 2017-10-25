@@ -1,4 +1,4 @@
-app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory){
+app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory, CheckListFactory){
 
 
   $scope.projects = [];
@@ -26,6 +26,7 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
 
 
 
+
   let getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
       for(x=0;x<results.length;x++){
@@ -33,28 +34,40 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
         results[x].createdOn = moment(date).format('M/DD/YY h:mm:ss a');
         results[x].sortedBy = moment(date).format('YYYY/MM/DD, h:mm:ss a');
       }
-      checkForChecklist(results);
       $scope.projects = results;
+
     }).catch((error) => {
       console.log("get proj error", error);
     });
   };
 
+  let findCheckedData = () => {
+    CheckListFactory.getCheckedData($rootScope.user.uid).then((results) => {
+      // console.log(results);
+      $scope.disableClass = checkForChecklist(results);
+      // ctrl.versions = response.data;
+    }).catch((error) => {
+      console.log("checklist error", error);
+    })
+  };
 
-  // $scope.disabled = true;
+  findCheckedData();
 
+  $scope.changeCheck = (project) => {
+    console.log(project);
+  }
 
   getProjects();
 
   let checkForChecklist = (obj) => {
-    obj.forEach(function(x){
-      let check = x.checklist;
-      // console.log(check);
-      for(let active in check){
-        // console.log(active);
+    for(x=0;x<obj.length;x++){
+      let state = obj[x].active;
+      if(state === false){
+        return 'disabled';
+      }else{
+        return;
       }
-
-    })
-  }
+    }
+  };
 
 });

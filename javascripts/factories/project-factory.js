@@ -1,43 +1,13 @@
 app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-  let getTimeStamp = () => {
-      const now = new Date();
-      return ((now.getMonth() + 1) + '/' +
-              (now.getDate()) + '/' +
-               now.getFullYear() + " " +
-               now.getHours() + ':' +
-               ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' +
-               ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
-  }
-
-  let count = 0;
-  let timeStamp = [];
-
-  let updateTimeStamp = () => {
-
-    timeStamp[count] = getTimeStamp();
-
-    let arrayLength = timeStamp.length;
-    let click = count + 1;
-    for (var i = 0; i < arrayLength; i++) {
-      timeStamp[i];
-    }
-    count++;
-    newTime = timeStamp.pop();
-  }
-
-  let newDate = getTimeStamp();
-
   let addProject = (p) => {
-    let date = moment().format();
+    let date = new Date();
     return $q((resolve, reject) => {
       $http.post(`${FIREBASE_CONFIG.databaseURL}/projects.json`, JSON.stringify({
         "assets" : p.assets,
         "cellid" : p.cellid,
         "contentid" : p.content,
-        "checklist" : {
-          "active" : false
-        },
+        "checklist" : false,
         "creativeServer" : p.creative,
         "createdOn" : date,
         "imageServer" : p.imageServer,
@@ -53,12 +23,6 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
       });
     });
   };
-  //
-  // $http.get(`${FIREBASE_CONFIG.databaseURL}/users.json`).then((results) => {
-  //   console.log(results);
-  // }).catch((error) => {
-  //   console.log(error);
-  // });
 
 
   let getProjects = (userId) => {
@@ -104,7 +68,8 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
     };
 
     let editProject = (p, id) => {
-      updateTimeStamp();
+      // updateTimeStamp();
+      let update = moment().format('M/DD/YY h:mm:ss a');
       return $q((resolve, reject) => {
         $http.put(`${FIREBASE_CONFIG.databaseURL}/projects/${id}.json`, JSON.stringify({
           "assets" : p.assets,
@@ -112,7 +77,7 @@ app.factory("ProjectFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
           "contentid" : p.contentid,
           "creativeServer" : p.creativeServer,
           "createdOn" : p.createdOn,
-          "updatedOn" : newTime,
+          "updatedOn" : update,
           "imageServer" : p.imageServer,
           "jiraTicket" : p.jiraTicket,
           "notes" : p.notes,
