@@ -26,7 +26,9 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 
       });
     }, (error) => {
-      $scope.alerts.push({msg: error.message});
+      let message = error.message + " You may also have the incorrect credentials. Please check and try again.";
+      $scope.alerts.push({msg: message});
+      $scope.auth = {};
       console.log("authenticate error", error);
       $location.url("/auth");
     }).catch((error) => {

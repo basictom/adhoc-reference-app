@@ -17,7 +17,7 @@ app.controller("ManagerChecklistCtrl", function(CheckListFactory, $scope, $locat
 
   let findCheckedData = (id) => {
     CheckListFactory.getCheckedData(id).then((response) => {
-      $scope.projectChecklist = indexByAttr(response);
+      $scope.projectChecklist = indexByAttribute(response);
     }).catch((error) => {
       console.log("checklist error", error);
     })
@@ -25,7 +25,7 @@ app.controller("ManagerChecklistCtrl", function(CheckListFactory, $scope, $locat
 
   findCheckedData(projectId);
 
-  let indexByAttr = (coll) => {
+  let indexByAttribute = (coll) => {
     return coll.reduce(function(result, item){
       angular.forEach(item, function(value, index) {
         result[index] = result[index] || [];

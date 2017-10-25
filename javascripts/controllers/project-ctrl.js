@@ -24,9 +24,6 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     });
   };
 
-
-
-
   let getProjects = () => {
     ProjectFactory.getProjects($rootScope.user.uid).then((results) => {
       for(x=0;x<results.length;x++){
@@ -41,20 +38,7 @@ app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFac
     });
   };
 
-  let findCheckedData = () => {
-    CheckListFactory.getCheckedData($rootScope.user.uid).then((results) => {
-      // console.log(results);
-      $scope.disableClass = checkForChecklist(results);
-      // ctrl.versions = response.data;
-    }).catch((error) => {
-      console.log("checklist error", error);
-    })
-  };
-
-  // findCheckedData();
-
   $scope.changeCheck = (project) => {
-    // console.log(project.id);
     $location.url(`/checklist/${project.id}`);
   }
 
