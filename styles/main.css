@@ -66,7 +66,7 @@ th, td {
 /* NAVIGATION */
 .nav {
   height: 100px;
-  background-color: #819fb1;
+  background-color: #a7c0d2;
   /*border-bottom: 2px solid #bdd638;*/
   margin: 0 auto;
   padding: 0;
@@ -89,7 +89,6 @@ th, td {
 }
 .content {
   border-radius: 5px;
-  border:1px solid #bdd638;
   background-color:#a7c0d2;
   padding:20px 30px;
 }
