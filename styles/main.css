@@ -64,14 +64,26 @@ th, td {
   text-align: left;
 }
 /* NAVIGATION */
-.nav {
+.white a {
+  color: #ffffff !important;
+}
+.navbar-style {
   height: 100px;
   background-color: #a7c0d2;
-  /*border-bottom: 2px solid #bdd638;*/
   margin: 0 auto;
   padding: 0;
   width:100%;
   text-align:center;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  font-size:18px;
+}
+.navbar-style ul {
+  padding-top: 25px;
+}
+.navbar-header img {
+  padding-top: 7px;
 }
 .inner-nav {
   margin: 0 auto;
@@ -91,6 +103,16 @@ th, td {
   border-radius: 5px;
   background-color:#a7c0d2;
   padding:20px 30px;
+}
+.search input {
+  margin: 20px 0px;
+  padding: 10px;
+  font-size:18px;
+  border: none;
+  border-radius: 3px;
+}
+.search input::placeholder {
+  color:#9e9e9e;
 }
 .task-info {
   margin: 30px;

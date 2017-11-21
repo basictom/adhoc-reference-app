@@ -1,6 +1,5 @@
 app.controller("ProjectCtrl", function($scope, $rootScope, $location, ProjectFactory, CheckListFactory){
 
-
   $scope.projects = [];
   $scope.info = false;
 
