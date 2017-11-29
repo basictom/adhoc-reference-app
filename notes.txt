@@ -1,0 +1,5 @@
+- Warn end user when submitting a checklist that they will not be able to edit the task or edit their checklist once submitted
+- 'All Projects' link to view everyones projects. 
+- Make 'Task Name' 'JIRA Ticket' & 'Creative Server' required fields
+- Look into what it will take to allow the manager to make alterations to the submitted checklist, as well as re-open the checklist for the user.
+- Look into the possibilty of 'deleteing' a version from the checklist

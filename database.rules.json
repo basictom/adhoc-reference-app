@@ -1,0 +1,18 @@
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true",
+    "projects": {
+      ".indexOn": [
+        "uid",
+        "projectId"
+      ]
+    },
+    "checklists": {
+      ".indexOn": "uid"
+    },
+    "users": {
+      ".indexOn": "uid"
+    }
+  }
+}
